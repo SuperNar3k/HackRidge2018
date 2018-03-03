@@ -53,9 +53,7 @@
                     <a href="signup.php" id="newAccount">Don't have an account?</a>
 
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
-                </div>
-                <div>
-                </div>                
+                </div>              
             </form>
             
         </div>

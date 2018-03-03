@@ -15,6 +15,7 @@ body{
     padding: 30px;
 }
 #loginButton{
+    transition: 300ms;
     border: none;
     padding: 10px;
     border-radius: 15px;
@@ -28,8 +29,10 @@ body{
     font-size: 24px;
 }
 
-loginButton:hover{
+#loginButton:hover{
     background-color: darkorange;
+    transform: translateY(-5px);
+    transition: 300ms;
 }
 
 #login p{
@@ -45,9 +48,15 @@ loginButton:hover{
     opacity: 50%;
 }
 
+#newAccount:hover{
+    transform: translateY(-5px);
+    transition: 300ms;
+}
+
 #newAccount{
+    transition: 300ms;
     border: none;
-    font-size: 20px;
+    font-size: 12px;
     padding: 5px;
     text-decoration: none;
     color: orange;
