@@ -22,8 +22,6 @@
         
     <body> 
 
-        <img id = "fixedBGImg" src = "..\rsc\text_logo.png"><!--Fixed Image in Background-->
-
         <div id = "footerPusher">
 
             <div style ="display: flex;min-height:100%">

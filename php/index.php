@@ -19,9 +19,7 @@
     <header id = "header"><?php include "header.php"; ?></header>
 
     <body>
-        
-        <img id = "fixedBGImg" src = "..\rsc\text_logo.png"><!--Fixed Image in Background-->
-        
+                
         <div id = "footerPusher">
 
             <!--Home Page Main Image Card-->
