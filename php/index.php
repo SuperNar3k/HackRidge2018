@@ -26,7 +26,6 @@
 
             <!--Home Page Main Image Card-->
 
-            <div id = "frontImg" class = "card" style = "width: 50%;"></div>
         </div>
     </body>
 

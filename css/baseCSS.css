@@ -15,7 +15,7 @@ footer {
     position:relative;
     margin:0;
     padding:0;
-    min-height: calc(-263px + 100vh);
+    min-height: calc(-234px + 100vh);
 }
 
 .hidden{
