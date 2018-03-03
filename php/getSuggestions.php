@@ -1,6 +1,7 @@
 <?php
 	require 'database.php';
-	
+	session_start();//delete kager
+
 	$suggestions = array();
 
 	//Find what current user has liked
@@ -15,7 +16,7 @@
 		//Find other users who have liked the same dishes
 		$sql = "SELECT * from userRecipeLikes WHERE recipeID = :recipeID";
 		$stmt = $pdo->prepare($sql);
-		$stmt->execute(['recipeID' => $userLikes[$i]);
+		$stmt->execute(['recipeID' => $userLikes[$i]]);
 		$similarUsers = $stmt->fetchColumn(0);
 		
 		for($j = 0; $j<count($similarUsers); $j++){
@@ -25,19 +26,19 @@
 				//Find other dishes similar users have liked
 				$sql = "SELECT * from userRecipeLikes WHERE userID: userID";
 				$stmt = $pdo->prepare($sql);
-				$stmt->execute(['userID'->$similarUsers[$j]);
+				$stmt->execute(['userID'=>$similarUsers[$j]]);
 				$similarUserLikes = $stmt->fetchColumn(1);
 				
 				//Find out how many recipes are liked in common
 				for($k = 0; $k<count($similarUserLikes); $k++){
-					if(in_array($similarUserLikes[$k], $userLikes)){
+					if(in_array($similarUserLikes[$k], $userLikes,true)){
 						$similarityIndex++;
 					}
 				}
 				//Add to suggestions value for recipes new to user
 				for($k = 0; $k<count($similarUserLikes); $k++){
-					if(!in_array($similarUserLikes[$k], $userLikes)){
-						if(isset($suggestions[$similarUserLikes[$k]]){
+					if(!in_array($similarUserLikes[$k], $userLikes,true)){
+						if(isset($suggestions[$similarUserLikes[$k]])){
 							$suggestions[$similarUserLikes[$k]]++;
 						}
 						else{

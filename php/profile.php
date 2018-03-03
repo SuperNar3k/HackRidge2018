@@ -4,6 +4,13 @@
     include "database.php";
     include "loginCheck.php";
     
+    $sql = "SELECT * FROM users WHERE userID=:UserID";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(["UserID" => $_SESSION['userID']]); 
+    $user = $stmt->fetch(PDO::FETCH_OBJ);
+
+    $firstName = $user->firstName;
+    $lastName = $user->lastName;
 ?>
 <html>
     <head>
@@ -25,13 +32,15 @@
         <div id = "footerPusher">
 
             <div style ="display: flex;min-height:100%">
-                <div style="height: 100px; width: 30%; padding: 0px; margin: 0px; border-right: .1rem solid rgba(0,0,0,.1);margin-top:20px;margin-left:20px;">
+                <div style="height: 100%; width: 30%; padding: 0px; margin: 0px; border-right: .1rem solid rgba(0,0,0,.1);margin-top:20px;margin-left:20px;">
                     <p>
-                        <img id = "logo" src = "../rsc/text_logo.png">
+                        <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
                     </p>
+                    <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
+                    <p>...</p>
                 </div>
 
-                <div style="height: 100px; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
+                <div style="height: 100%; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
                     d
                 </div>
             </div>

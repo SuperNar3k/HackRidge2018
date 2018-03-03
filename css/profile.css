@@ -4,6 +4,10 @@
 }
 #ProfileDataDiv input{text-align: center;}
 #ProfileDataDiv button{margin: 10px;}
+#userProfileImage{
+    height: 100px;
+    width: 100px;
+}
 div.dashboardButton{
     text-align: center;
     margin: 30px 10%;
