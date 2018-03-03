@@ -1,7 +1,7 @@
 /* General */
 body{
     margin: 0px;
-    background-color: #005da3;
+    background-color: #ffffff;
     min-height: 100%;
 }
 footer {
@@ -182,9 +182,10 @@ div.panel p{
 }
 #fixedBGImg{
     display: block;
+    float: center;
     position: fixed; 
-    opacity:0.25; 
-    width: 300px; 
-    margin: 10% calc(50% - 150px); /* img is 300px wide */
+    opacity:0.35; 
+    width: 500px; 
+    margin: 10% calc(50% - 250px); /* img is 300px wide */
     z-index:-1;
 }
