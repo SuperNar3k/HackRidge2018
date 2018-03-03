@@ -26,13 +26,12 @@
 
             setcookie("LOGINERROR","error", time() + (86400 * 30), "/");
             header("location: login.php");
-            $dbEmail = $user->Email;
-            $dbpassHash =$user->P;
 
         } else{
             // If the user asswordHash;
-            $studentID = $user->StudentID;        
-
+            $userID = $user->userID;        
+            $dbEmail = $user->email;
+            $dbpassHash =$user->passwordHash;
             // Check if the password matches, if not, invalid
 
                 if($useremail === $dbEmail && password_verify($userpassword, $dbpassHash)) { 
