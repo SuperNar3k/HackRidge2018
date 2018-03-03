@@ -4,9 +4,9 @@
 <body>
 	Hey!
 	<?php
-	include 'database.php';
+	require 'database.php';
 	
-	if(defined(API_KEY)){
+	if(defined('API_SEARCH_URL')){
 		echo 'defined';
 	}
 	else{

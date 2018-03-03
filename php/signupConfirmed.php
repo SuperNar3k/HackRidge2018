@@ -59,9 +59,9 @@ session_start();
     }else{ 
         //if only data is unique
         //create new user
-        $sql = "INSERT INTO `users`(`firstName`, `lastName`, `email`, `password`) VALUES (:name, :lastName,:email, :pass)";
+        $sql = "INSERT INTO `users`(`firstName`, `lastName`, `email`, `passwordHash`, :imageFilePath) VALUES (:firstName, :lastName,:email, :pass, :ifp)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(["name" => $firstname, "email" => $useremail, "lastName" => $lastname, "pass" => $userpassword]);
+        $stmt->execute(["firstName" => $firstname, "email" => $useremail, "lastName" => $lastname, "pass" => password_hash($userpassword, PASSWORD_DEFAULT), "ifp" => "defaultUserIcon.php"]);
         header("location: login.php");
     }
     ?>
