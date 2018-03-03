@@ -48,12 +48,12 @@ session_start();
 
     if ($rowCountemail == 1) { 
         
-        setcookie("ERROR","That email is already taken.", time() + (86400 * 30), "/");
+        setcookie("signupERROR","That email is already taken.", time() + (86400 * 30), "/");
         header("location: signup.php");
 
     }else if ($userpassword != $userpasswordConfirm) { 
         
-        setcookie("ERROR","Your password does not match the other.", time() + (86400 * 30), "/");
+        setcookie("signupERROR","Your password does not match the other.", time() + (86400 * 30), "/");
         header("location: signup.php");
         
     }else{ 

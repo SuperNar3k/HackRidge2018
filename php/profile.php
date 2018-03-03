@@ -15,15 +15,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="headerJQuery.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("#myProfileLink").addClass("active");
-
-                $("#adminDashboardButton").click(function(){
-                    window.location.href = "admin-dashboard.php";
-                });
-            });
-        </script>
+        
     </head>
 
     <header id = "header"><?php include "header.php"; ?></header>
@@ -31,58 +23,18 @@
     <body> 
         <div id = "footerPusher">
 
-        <img id = "fixedBGImg" src = "https://www.nhs.us/assets/images/nhs/NHS_header_logo.png"><!--Fixed Image in Background-->
+            <img id = "fixedBGImg" src = "https://www.nhs.us/assets/images/nhs/NHS_header_logo.png"><!--Fixed Image in Background-->
 
-            <!--Include Admin Dashboard link-->
-            <?php 
-
-                // Pulling data from "students" for current user
-
-                    $sql = "SELECT * FROM users WHERE userID=:userID";
-                    $stmt = $pdo->prepare($sql);
-                    $stmt->execute(["userID" => $_SESSION["userID"]]);
-                    $data = $stmt->fetch(PDO::FETCH_OBJ);
-
-            ?>
-
-            <div class = "classic panel">
-                <p>My Information</p>
-                <!--View only data-->
-                <table id = "profileDataTable">
-                    <tr>
-                        <th>Name</th>
-                        <th>Hours Volunteered</th>
-                        <th>Vice President</th>
-                    </tr>
-                    <tr>
-                        <td><?php echo $data->FirstName, ' ', $data->LastName;?></td>
-                        <td><?php echo $data->HoursCompleted;?></td>
-                        <td><?php echo $data->VicePresident;?></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id = "eventsPanel" class = "classic panel">
-                <div id = "informationContainer">
-                    <p>My Event History</p>
-                    <div id = "eventHistory">
-                        <table id = "eventHistoryTable">
-                            <tr>
-                                <th>Event Name</th>
-                                <th>Date</th>
-                                <th>Location</th>
-                            </tr>
-                            <!--Load data-->                    
-                            <script>
-                                $(document).ready(function(){
-                                    $("#eventHistoryTable").load("myEventsGetter.php?history=true");
-                                });
-                            </script>
-                        </table>
-                    </div>
+            <div style ="display: flex;min-height:calc(-355px + 100vh)">
+                <div style="background-color: #333;min-height: 100%; width: 30%; padding: 0px;">
+                    f
+                </div>
+                
+                <div style="background-color: #333;min-height: 100%; width: 70%; padding: 0px;">
+                    d
                 </div>
             </div>
-
+            
         </div>
     </body>
         
