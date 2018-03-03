@@ -34,7 +34,7 @@ div.headerSignIn button {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a, form {
+.topnav a, searchBarForm {
     float: left;
     display: inline-block;
     color: black;

@@ -20,6 +20,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="headerJQuery.js"></script>
+        <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/baseCSS.css">
 
@@ -30,8 +31,6 @@
 
     <body>
 		<div id = "footerPusher">
-
-            <img id = "fixedBGImg" src = "..\rsc\text_logo.png"> <!--Fixed image in background-->
 
             <form id="login" class="form" action="session.php" method="post" style="height:350px;">
                 <div>
@@ -61,4 +60,4 @@
 
     <footer id = "footer"><?php include "footer.php"; ?></footer>
 
-</html>
+</html> 

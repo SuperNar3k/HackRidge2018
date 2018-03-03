@@ -114,11 +114,3 @@ div.panel p{
     right:calc(100% - 150px); 
     z-index:1;
 }
-#fixedBGImg{
-    display: block;
-    position: fixed; 
-    opacity:1; 
-    width: 500px; 
-    margin: 10% calc(50% - 150px); /* img is 300px wide */
-    z-index:-1;
-}
