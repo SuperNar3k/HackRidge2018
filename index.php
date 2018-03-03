@@ -1,13 +1,13 @@
 <?php 
 
-    
+
 
 ?>
 <html>
 
     <head>
         <title>Index</title>
-    </header>
+    </head>
 
     <body>
 
