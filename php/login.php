@@ -9,7 +9,6 @@
 
         if(isset($_COOKIE['LOGINERROR'])) {
             setcookie("LOGINERROR", "", time()-3600);
-                echo "true";
             $loginError = true;
         }
 

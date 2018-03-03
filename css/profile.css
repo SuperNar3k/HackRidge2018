@@ -1,0 +1,49 @@
+#ProfileDataDiv p{
+    text-align: left;
+    display: inline-block;
+}
+#ProfileDataDiv input{text-align: center;}
+#ProfileDataDiv button{margin: 10px;}
+div.dashboardButton{
+    text-align: center;
+    margin: 30px 10%;
+    border: 3px solid white;
+    border-radius: 10px;
+    
+    /* Adjust Text */
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    
+    /* Color */
+    background-color: white;
+    color: #005da3;
+}
+div.dashboardButton:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+div.dashboardButton p{margin: 5px;}
+#eventsPanel{padding: 0;}
+table tr:nth-child(even){background-color: #e8cfa4;}
+#eventsPanel div{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#tabs{background-color: #e8cfa4; /*darkened moccasin*/}
+#tabs div{
+    display: inline-block;
+    margin: 0;
+    width: calc(50% - 2px);
+    background-color: #ffebcd; /*blanched almond*/
+}
+#tabs div.inactive{background-color: #e8cfa4; /*darkened moccasin*/}
+#informationContainer{padding: 10px;}
+table{width: 100%;}
+th, td{
+    font-family: Bookman, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+#informationContainer div table th, td{width: 33.33%;}
