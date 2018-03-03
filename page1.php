@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
   <body>
-      Page1!
+    <form method = "post" action = "testSearch.php">
+      <input type = "text" name = "query">
+      <input type = "number" name = "number">
+      <input type = "submit">
+    </form>
   </body>
 </html>
