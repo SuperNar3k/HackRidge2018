@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    background-color: #005da3;
     text-align: center;
 }
 #login{
@@ -15,27 +14,48 @@ body{
     display: inline-block;
     padding: 30px;
 }
-#login button{
+#loginButton{
     border: none;
     padding: 10px;
     border-radius: 15px;
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 0px;
-    background-color: #005da3;
+    background-color: orange;
     color: white;
+    cursor: pointer; 
+    font-family: Bookman, sans-serif;
+    font-size: 24px;
+}
+
+loginButton:hover{
+    background-color: darkorange;
+}
+
+#login p{
+    margin: 5px 0px;
+    color: orange;
+    text-align: left;
+    font-family: Bookman, sans-serif;
+    font-size: 24px;
+}
+
+#login {
+    background-color: rgb(0, 132, 255);
+    opacity: 50%;
+}
+
+#newAccount{
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: orange;
     
     font-family: Bookman, sans-serif;
     font-size: 24px;
 }
 
-#login p{
-    margin: 5px 0px;
-    color: white;
-    text-align: left;
-    font-family: Bookman, sans-serif;
-    font-size: 24px;
-}
 #login input{
     font-family: Bookman, sans-serif;
     font-size: 24px;
