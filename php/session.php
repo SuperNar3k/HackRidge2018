@@ -24,7 +24,7 @@
 
         if ($rowCount != 1) { 
 
-            setcookie("LOGINERROR2","error", time() + (86400 * 30), "/");
+            setcookie("LOGINERROR","error", time() + (86400 * 30), "/");
             header("location: login.php");
             $dbEmail = $user->Email;
             $dbpassHash =$user->P;

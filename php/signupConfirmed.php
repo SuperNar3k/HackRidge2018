@@ -39,7 +39,7 @@ session_start();
     include "database.php";
 
     //collecting rows of emails with same email
-    $sql = "SELECT * FROM user WHERE email=:myEmail";
+    $sql = "SELECT * FROM users WHERE email=:myEmail";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(["myEmail" => $useremail]); 
     $email = $stmt->fetch(PDO::FETCH_OBJ);
@@ -49,19 +49,19 @@ session_start();
     if ($rowCountemail == 1) { 
         
         setcookie("ERROR","That email is already taken.", time() + (86400 * 30), "/");
-        header("location: error.php");
+        header("location: signup.php");
 
     }else if ($userpassword != $userpasswordConfirm) { 
         
         setcookie("ERROR","Your password does not match the other.", time() + (86400 * 30), "/");
-        header("location: error.php");
+        header("location: signup.php");
         
     }else{ 
         //if only data is unique
         //create new user
-        $sql = "INSERT INTO `users`(`firstName`, `lastName`, `email`, `passwordHash`, :imageFilePath) VALUES (:firstName, :lastName,:email, :pass, :ifp)";
+        $sql = "INSERT INTO `users`(`firstName`, `lastName`, `email`, `passwordHash`, `imageFilePath`) VALUES (:firstName, :lastName,:email, :pass, :ifp)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(["firstName" => $firstname, "email" => $useremail, "lastName" => $lastname, "pass" => password_hash($userpassword, PASSWORD_DEFAULT), "ifp" => "defaultUserIcon.php"]);
+        $stmt->execute(["firstName" => $firstname, "lastName" => $lastname, "email" => $useremail, "pass" => password_hash($userpassword, PASSWORD_DEFAULT), "ifp" => "defaultUserIcon.png"]);
         header("location: login.php");
     }
     ?>

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<?php session_start();?>
+<?php session_start();
+
+    // Checking for issues if previus signup
+
+        if(isset($_COOKIE['signupERROR'])) {
+            $loginError = $_COOKIE['signupERROR'];
+            setcookie("signupERROR", "", time()-3600);
+        }
+
+?>
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="cssFolder/login.css">
-        <link rel="stylesheet" href="cssFolder/homePage.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/baseCSS.css">
         <script src="js/jquery.js"></script>
         <script src="js/form.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">

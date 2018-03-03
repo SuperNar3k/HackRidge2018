@@ -7,7 +7,7 @@
     
     $host = "localhost";
     $user = "root";
-    $dbname = "HackRidge2018";
+    $dbname = "hackridge2018";
 
     $dsn = "mysql:host=".$host."; dbname=".$dbname;
 
