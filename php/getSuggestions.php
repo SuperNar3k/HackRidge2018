@@ -8,7 +8,8 @@
 	$sql = "SELECT * from userRecipeLikes WHERE userID = :userID";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute(['userID' => $_SESSION['userID']]);
-	$userLikes = $stmt->fetchColumn(1);
+	$userLikes = array();
+	$userLikes = $stmt->fetchAll(PDO::FETCH_COLUMN,1);
 
 	$reviewedUsers = array();
 	
@@ -17,7 +18,7 @@
 		$sql = "SELECT * from userRecipeLikes WHERE recipeID = :recipeID";
 		$stmt = $pdo->prepare($sql);
 		$stmt->execute(['recipeID' => $userLikes[$i]]);
-		$similarUsers = $stmt->fetchColumn(0);
+		$similarUsers = $stmt->fetchAll(PDO::FETCH_COLUMN,0);
 		
 		for($j = 0; $j<count($similarUsers); $j++){
 			//Check if this user has already been reviewed
@@ -27,7 +28,7 @@
 				$sql = "SELECT * from userRecipeLikes WHERE userID: userID";
 				$stmt = $pdo->prepare($sql);
 				$stmt->execute(['userID'=>$similarUsers[$j]]);
-				$similarUserLikes = $stmt->fetchColumn(1);
+				$similarUserLikes = $stmt->fetchAll(PDO::FETCH_COLUMN,1);
 				
 				//Find out how many recipes are liked in common
 				for($k = 0; $k<count($similarUserLikes); $k++){
