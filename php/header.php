@@ -9,7 +9,7 @@
 			</form>
 			<?php if(isset($_SESSION["StudentID"])) : ?><!--Checking if student is logged in for different nav bar-->
         <a class = "baseText" id = "suggestionsLink" href = "suggestions.php">What Should I Eat Today?</a>
-				<a class = "baseText" id = "myProfileLink" href = "my-profile.php">My Profile</a>
+				<a class = "baseText" id = "myProfileLink" href = "profile.php">My Profile</a>
 			<?php endif; ?>
     </nav>
 </div>
