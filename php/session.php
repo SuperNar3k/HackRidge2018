@@ -14,7 +14,7 @@
    
     // Pulling data from "students" where "Email" is the user inputed email
 
-        $sql = "SELECT * FROM students WHERE Email=:myEmail";
+        $sql = "SELECT * FROM users WHERE email=:myEmail";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(["myEmail" => $useremail]); 
         $user = $stmt->fetch(PDO::FETCH_OBJ);
@@ -39,7 +39,7 @@
 
                     // If successfull, start SESSION with "StudentID"
 
-                        $_SESSION["StudentID"] = $studentID;
+                        $_SESSION["userID"] = $userID;
                         header('Location: index.php'); 
                 } else{
                     setcookie("LOGINERROR","error", time() + (86400 * 30), "/");

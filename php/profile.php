@@ -8,7 +8,7 @@
 <html>
     <head>
 
-        <title>LPNHS - My Profile</title>
+        <title>Foodle Profile</title>
         
         <link rel="stylesheet" href="../css/baseCSS.css">
         <link rel="stylesheet" href="../css/profile.css">
@@ -38,19 +38,11 @@
 
                 // Pulling data from "students" for current user
 
-                    $sql = "SELECT * FROM students WHERE StudentID=:studentID";
+                    $sql = "SELECT * FROM users WHERE userID=:userID";
                     $stmt = $pdo->prepare($sql);
-                    $stmt->execute(["studentID" => $_SESSION["StudentID"]]);
+                    $stmt->execute(["userID" => $_SESSION["userID"]]);
                     $data = $stmt->fetch(PDO::FETCH_OBJ);
 
-
-                // If users "Position" : admin -> admin dashboard
-                
-                    if($data->Position!=="Student"):
-                        echo '<div id = "adminDashboardButton" class = "dashboardButton">
-                            <p>Admin Dashboard</p>
-                            </div>';
-                    endif;
             ?>
 
             <div class = "classic panel">

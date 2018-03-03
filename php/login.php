@@ -49,6 +49,9 @@
                     <input id = "loginPassword" placeholder = "Password" type = "password" name = "password" required>
                     <br/>
                     <br/>
+
+                    <a href="login.php" id="newAccount" style="padding:10px;">Have an account?</a>
+
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>
                 <div>
