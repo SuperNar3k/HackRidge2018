@@ -22,6 +22,7 @@ div.headerSignIn button {
     z-index: 100;
     position: fixed;
     width: 100%;
+    height: 55px;
 }
 
 /* Add a black background color to the top navigation */
@@ -34,7 +35,7 @@ div.headerSignIn button {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a, searchBarForm {
+.topnav a, #searchBarForm {
     float: left;
     display: inline-block;
     color: black;
@@ -49,7 +50,8 @@ div.headerSignIn button {
 }
 
 #searchBarForm{
-		width: 37.5%;
+        width: 25%;
+        padding-left: 15px;
 }
 
 #suggestionsLink{
@@ -73,5 +75,6 @@ div.headerSignIn button {
 		background-color: #aaa;
 		padding: 5px;
 		padding-left: 10px;
-		color: #fff;
+        color: #fff;
+        width: 100%;
 }

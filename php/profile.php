@@ -25,11 +25,13 @@
         <div id = "footerPusher">
 
             <div style ="display: flex;min-height:100%">
-                <div style="background-color: #333;min-height: 100%; width: 30%; padding: 0px;">
-                    f
+                <div style="height: 100px; width: 30%; padding: 0px; margin: 0px; border-right: .1rem solid rgba(0,0,0,.1);margin-top:20px;margin-left:20px;">
+                    <p>
+                        <img id = "logo" src = "../rsc/text_logo.png">
+                    </p>
                 </div>
-                
-                <div style="background-color: #333;min-height: 100%; width: 70%; padding: 0px;">
+
+                <div style="height: 100px; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
                     d
                 </div>
             </div>
