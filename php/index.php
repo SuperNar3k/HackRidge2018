@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/baseCSS.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="headerJQuery.js"></script>
+        <script src="../js/headerJQuery.js"></script>
         <script>
             $(document).ready(function(){
                 $("#homeLink").addClass("active");
