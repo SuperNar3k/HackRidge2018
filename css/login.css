@@ -1,12 +1,10 @@
 body{
-    margin: 0px;
     text-align: center;
 }
 #login{
     display: inline-block;
     margin: 10% auto;
     padding: 30px;
-    background-color: #333;
     border-radius: 15px;
     text-align: left;
 }
@@ -32,6 +30,7 @@ body{
 #loginButton:hover{
     background-color: darkorange;
     transform: translateY(-5px);
+    box-shadow: 0px 0px 2px 0px black;
     transition: 300ms;
 }
 
@@ -54,14 +53,10 @@ body{
 
 #newAccount{
     transition: 300ms;
-    border: none;
-    font-size: 12px;
-    padding: 5px;
     text-decoration: none;
-    color: orange;
-    
+    color: orange; 
     font-family: Bookman, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #login input{
