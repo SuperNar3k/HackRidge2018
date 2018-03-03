@@ -63,3 +63,89 @@ body{
     font-family: Bookman, sans-serif;
     font-size: 24px;
 }
+/* body {
+    font-family: 'Lato', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navBar {
+    height: 50px;
+    background-color: #393939;
+}
+.logTitle {
+    color: #393939;
+    font-size: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.loghr {
+    border: 1px solid grey;
+    margin-bottom: 35px;
+    width: 70%;
+}
+
+.form {
+    border: 1px solid rgba(0,0,0,0.18);
+    display: block;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    margin: 5% auto;
+    box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.11);
+}
+
+.field {
+    display: block;
+    padding: 12px;
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    border: 1px solid rgba(0,0,0,0.18);
+    padding: 10px 0px 5px 5px;
+}
+
+#newAccount {
+    float: right;
+    font-size: 12px;
+    display: block;
+    color: rgb(0, 105, 218);
+    cursor: pointer;
+}
+
+#newAccount:hover {
+    color: rgb(37, 139, 255);
+}
+
+
+.logButton {
+    transition: 300ms;
+    height: 50px;
+    width: 70%;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 100;
+    background: rgb(74, 202, 111);
+    border-radius: 2px;
+    border: 0px;
+    color: white;
+}
+.logButton:hover {
+    background: rgb(100, 248, 144);
+    transform: translateY(-5px);
+    transition: 300ms;
+    color: #393939;
+}
+.logButton:focus {
+    outline: none;
+}
+
+
+ */
