@@ -31,11 +31,11 @@
     <body>
 		<div id = "footerPusher">
 
-            <img id = "fixedBGImg" src = "https://www.nhs.us/assets/images/nhs/NHS_header_logo.png"> <!--Fixed image in background-->
+            <img id = "fixedBGImg" src = "..\rsc\text_logo.png"> <!--Fixed image in background-->
 
             <form id="login" class="form" action="session.php" method="post" style="height:350px;">
                 <div>
-                    <p style = "font-size: 30px; text-decoration: underline;">Sign in</p>
+                    <p style = "font-size: 30px; font-weight: bold;">Log in</p>
                     <br/>
                     <?php 
                         if($loginError){
@@ -43,19 +43,18 @@
                         }
                     ?>
                     <p>Email</p>
-                    <input id = "loginEmail" placeholder = "Email" type = "email" name = "email" autofocus required>
+                    <input placeholder = "Enter Email" type = "email" name = "email" autofocus required>
                     <br/><br/>
                     <p>Password</p>
-                    <input id = "loginPassword" placeholder = "Password" type = "password" name = "password" required>
+                    <input placeholder = "Enter Password" type = "password" name = "password" required>
                     <br/>
                     <br/>
 
-                    <a href="signup.php" id="newAccount" style="padding:10px;">Don't have an account?</a>
+                    <a href="signup.php" id="newAccount">Don't have an account?</a>
 
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>
                 <div>
-                    <img id = "tester" style = "margin: auto;" src = "https://www.nhs.us/assets/images/nhs/NHS_header_logo.png">
                 </div>                
             </form>
             
