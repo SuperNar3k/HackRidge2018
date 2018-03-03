@@ -21,51 +21,9 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="headerJQuery.js"></script>
-        <link rel="stylesheet" href="baseCSS.css">
-        <style>
-            body{
-                margin: 0px;
-                background-color: #005da3;
-                text-align: center;
-            }
-            #login{
-                display: inline-block;
-                margin: 10% auto;
-                padding: 30px;
-                background-color: #333;
-                border-radius: 15px;
-                text-align: left;
-            }
-            #login div{
-                display: inline-block;
-                padding: 30px;
-            }
-            #login button{
-                border: none;
-                padding: 10px;
-                border-radius: 15px;
-                font-size: 12px;
-                margin-top: 10px;
-                margin-bottom: 0px;
-                background-color: #005da3;
-                color: white;
-                
-                font-family: Bookman, sans-serif;
-                font-size: 24px;
-            }
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/baseCSS.css">
 
-            #login p{
-                margin: 5px 0px;
-                color: white;
-                text-align: left;
-                font-family: Bookman, sans-serif;
-                font-size: 24px;
-            }
-            #login input{
-                font-family: Bookman, sans-serif;
-                font-size: 24px;
-            }
-        </style>
 
     </head>
 

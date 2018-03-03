@@ -1,0 +1,190 @@
+/* General */
+body{
+    margin: 0px;
+    background-color: #005da3;
+    min-height: 100%;
+}
+footer {
+    margin: 0px;
+    padding: 10px;
+    background-color: #333;
+    width: calc(100% - 20px);
+    position: absolute; 
+}
+#footerPusher{
+    position:relative;
+    margin:0;
+    padding:0;
+    min-height: calc(-355px + 100vh);
+}
+
+.hidden{
+    visibility: hidden;
+}
+.vanish{
+    display: none;
+}
+
+/* Stuff above NavBar */
+#banner {
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+button.classicColor{
+    background-color: #005da3;
+    color: white;
+}
+
+button.reverseColor{
+    background-color: white;
+    color: #005da3;
+    font-weight: bold;
+}
+
+input.classicColor {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: #005da3;
+    color: white;
+}
+
+div.headerSignIn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.headerSignIn button {
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Nav Bar */
+#navBar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    border-radius: 0px;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.navBar-fixed {
+top: 0;
+z-index: 100;
+position: fixed;
+width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: block;
+    padding: 0px;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 25%;
+}
+
+/* Change the color of links on hover or active*/
+.topnav a:hover {
+    background-color: #005da3;
+    color: white;
+}
+.topnav a.active {
+    background-color: #005da3;
+    color: white;
+}
+
+/* Texts */
+p{
+    font-family: Bookman, sans-serif;
+    text-align: center;
+}
+.baseText {
+    font-family: Bookman, sans-serif;
+    text-align: center;
+}
+
+.urgentText{
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+}
+.footerText{
+    color: #005da3;
+}
+
+/* Panel Divs */
+div.panel{
+    border: 3px solid;
+    border-radius: 15px;
+    margin: 30px 10%;
+    padding: 0px 10px;
+}
+div.urgent{
+    border-color: red; 
+    background-color: #eea29a;
+}
+div.classic{
+    border-color: #daa520; /*goldenrod*/
+    background-color: #ffebcd; /*blanched almond*/
+    
+}
+div.classic hr{
+    border-color: #005da3;
+}
+div.panel p{
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* Cards (shadowed imgs) */
+.card{
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    background-color: #fff;
+}
+
+.card p{
+    font-size: 20px;
+    margin: 0; 
+    padding: 10px;
+}
+
+/* Select Imgs */
+#LPLogo{
+    position:absolute;
+    bottom:calc(100% - 115px); 
+    right:calc(100% - 150px); 
+    z-index:1;
+}
+#fixedBGImg{
+    display: block;
+    position: fixed; 
+    opacity:0.25; 
+    width: 300px; 
+    margin: 10% calc(50% - 150px); /* img is 300px wide */
+    z-index:-1;
+}
