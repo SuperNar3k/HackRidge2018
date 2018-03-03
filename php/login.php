@@ -50,7 +50,7 @@
                     <br/>
                     <br/>
 
-                    <a href="login.php" id="newAccount" style="padding:10px;">Have an account?</a>
+                    <a href="signup.php" id="newAccount" style="padding:10px;">Don't have an account?</a>
 
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>
