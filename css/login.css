@@ -1,12 +1,14 @@
 body{
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 0px;
+    margin:0px;
 }
 #login{
     display: inline-block;
     margin: 10% auto;
     padding: 30px;
     border-radius: 15px;
-    text-align: left;
 }
 #login div{
     display: inline-block;
@@ -14,17 +16,17 @@ body{
 }
 #loginButton{
     transition: 300ms;
-    border: none;
+    border: 0px;
     padding: 10px;
-    border-radius: 15px;
-    font-size: 12px;
-    margin-top: 10px;
-    margin-bottom: 0px;
     background-color: orange;
+    cursor: pointer;
+    height: 50px;
+    width: 70%;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 100;
+    border-radius: 2px;
     color: white;
-    cursor: pointer; 
-    font-family: Bookman, sans-serif;
-    font-size: 24px;
 }
 
 #loginButton:hover{
@@ -43,35 +45,26 @@ body{
 }
 
 #login {
-    background-color: rgb(0, 132, 255);
+    background-color: rgba(0, 132, 255, 0.678);
 }
 
 #newAccount:hover{
     transform: translateY(-5px);
-    transition: 300ms;
+    transition: 500ms;
 }
 
 #newAccount{
-    transition: 300ms;
+    transition: 500ms;
     text-decoration: none;
-    color: orange; 
-    font-family: Bookman, sans-serif;
-    font-size: 18px;
+    display: block;
+    color: orange;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 #login input{
     font-family: Bookman, sans-serif;
     font-size: 24px;
-}
-/* body {
-    font-family: 'Lato', sans-serif;
-    padding: 0px;
-    margin: 0px;
-}
-
-#navBar {
-    height: 50px;
-    background-color: #393939;
 }
 .logTitle {
     color: #393939;
@@ -81,25 +74,14 @@ body{
     text-align: center;
 }
 
-.loghr {
-    border: 1px solid grey;
-    margin-bottom: 35px;
-    width: 70%;
-}
-
 .form {
     border: 1px solid rgba(0,0,0,0.18);
     display: block;
     padding: 25px;
-    width: 320px;
+    width: 350px;
     text-align: center;
     margin: 5% auto;
     box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.11);
-}
-
-.field {
-    display: block;
-    padding: 12px;
 }
 
 .input {
@@ -112,40 +94,23 @@ body{
     padding: 10px 0px 5px 5px;
 }
 
-#newAccount {
-    float: right;
-    font-size: 12px;
-    display: block;
-    color: rgb(0, 105, 218);
-    cursor: pointer;
-}
-
-#newAccount:hover {
-    color: rgb(37, 139, 255);
-}
-
-
-.logButton {
-    transition: 300ms;
-    height: 50px;
-    width: 70%;
-    font-size: 18px;
-    margin-top: 30px;
-    font-weight: 100;
-    background: rgb(74, 202, 111);
-    border-radius: 2px;
-    border: 0px;
-    color: white;
-}
 .logButton:hover {
     background: rgb(100, 248, 144);
     transform: translateY(-5px);
-    transition: 300ms;
+    transition: 500ms;
     color: #393939;
 }
 .logButton:focus {
     outline: none;
 }
 
+.loghr {
+    border: 1px solid grey;
+    margin-bottom: 35px;
+    width: 70%;
+}
 
- */
+.field {
+    display: block;
+    padding: 12px;
+}

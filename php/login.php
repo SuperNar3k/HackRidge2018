@@ -32,9 +32,9 @@
     <body>
 		<div id = "footerPusher">
 
-            <form id="login" class="form" action="session.php" method="post" style="height:350px;">
+            <form id="login" class="form" action="session.php" method="post">
                 <div>
-                    <p style = "font-size: 30px; font-weight: bold;">Log in</p>
+                    <h1 style="logTitle">Log in</p>
                     <br/>
                     <?php 
                         if($loginError){
@@ -50,7 +50,6 @@
                     <br/>
                     <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
                     <a href="signup.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
-
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>              
             </form>
@@ -61,16 +60,3 @@
     <footer id = "footer"><?php include "footer.php"; ?></footer>
 
 </html> 
-
-<body>
-<div id="container">
-<header id = "header"><?php include "header.php"; ?></header>
-        <div class="body">
-            
-                
-            </form>
-        </div>
-
-</div>
-</body>
-</html>
