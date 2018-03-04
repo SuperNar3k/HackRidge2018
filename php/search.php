@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <?php include 'database.php';
 	session_start();
+	
+	//form submission check
+	if(isset($_POST['submit'])){
+		$sql = "INSERT INTO userrecipelikes (userID, recipeID) VALUES (:userID, :recipeID)";
+		$stmt = $pdo->prepare($sql);
+		$stmt->execute(['userID' => $_SESSION['userID'], 'recipeID' => $_POST['recipeID']]);
+	}
 ?>
 <html>
 	<head>
@@ -44,7 +51,12 @@
 							echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
 						}
 						echo '</ul>';
+						echo '<div style="display:flex">';
 						echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
+						echo '<form method = "post">
+						<input type = "hidden" name = "recipeID" value = "', $key,'">
+						<input type = "submit" name = "submit" value = "Like">';
+						echo '</div>';
 						echo '<hr>';
 					}
 					echo '</div>';
