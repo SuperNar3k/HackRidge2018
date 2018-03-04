@@ -23,10 +23,10 @@
         $lastName = $user->lastName;
 
         echo '<tr>
-                <td><input name = "userPID[', $i,']" value = "',(int)$_GET['userID'],'" class = "classicColor" type = "hidden"></td>
-                <td><input name = "userID[', $i,']" value = "',$data[$i],'" class = "classicColor" type = "hidden">',$firstName,' ',$lastName,'</td>';
-        echo '<td><input name = "deny[', $i,']" value = "Deny" class = "classicColor" type = "submit"></td>';
-        echo '<td><input name = "accept[', $i,']" value = "Accept" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color:red"></td>';
+                <input name = "userPID[', $i,']" value = "',(int)$_GET['userID'],'" class = "classicColor" type = "hidden">
+                <input name = "userID[', $i,']" value = "',$data[$i],'" class = "classicColor" type = "hidden"><td>',$firstName,' ',$lastName,'</td>';
+        echo '<td><input name = "deny[', $i,']" value = "Deny" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgb(255,153,0);"></td>';
+        echo '<td><input name = "accept[', $i,']" value = "Accept" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgba(4,133,255,.8);"></td>';
         echo '</tr>';
 
     }
@@ -42,10 +42,9 @@
     $data = $stmt->fetchAll();
 
     echo 
-    '<table>';
-
+    '<table><tr><td style="color: rgba(4,133,255,.8);font-size:32px;">Friends</td></tr>';
     for($i = 0; $i <$numberOfFriends; $i++){
-         if($data[$i][0]==$_SESSION['userID']){$friendID = $data[$i][1];}
+         if($data[$i][0]==(int)$_GET['userID']){$friendID = $data[$i][1];}
              else{$friendID = $data[$i][0];}
         $sql = "SELECT * FROM users WHERE userID=:UserID";
         $stmt = $pdo->prepare($sql);
@@ -55,7 +54,7 @@
         $lastName = $user->lastName;
 
         echo '<tr>
-                <td><input name = "userID[', $i,']" value = "',$data[$i],'" class = "classicColor" type = "hidden">',$firstName,' ',$lastName,'</td>';
+                <td style="padding-left:40px;"><a style="text-decoration:none;color: rgb(255,153,0);" href="profile.php?userID=',$friendID,'">',$firstName,' ',$lastName,'</a></td>';
        echo '</tr>';
 
     }
