@@ -12,9 +12,9 @@
 			<?php if(isset($_SESSION["userID"])) : ?><!--Checking if student is logged in for different nav bar-->
         <a class = "baseText" id = "suggestionsLink" href = "suggestions.php">What Should I Eat Today?</a>
 				<a class = "baseText" id = "myProfileLink" href = "profile.php?userID=<?php echo $_SESSION['userID'];?>">My Profile</a>
-				<a class = "classicColor" id = "logoutButton" href = "logout.php">Log Out</a>
+				<a class = "classicColor" id = "logoutButtonNav" href = "logout.php">Log Out</a>
 			<?php else: ?>
-				<a class = "classicColor" id = "loginButton" href = "login.php">Log In</a>
+				<a class = "classicColor" id = "loginButtonNav" href = "login.php">Log In</a>
 			<?php endif; ?>
     </nav>
 </div>
