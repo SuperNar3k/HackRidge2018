@@ -34,7 +34,6 @@
 					echo '</ul>';
 					echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
 					echo '</div>';
-
 				}
 				unset($key);
 				unset($value);
