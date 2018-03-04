@@ -6,12 +6,17 @@ body{
 }
 footer {
     margin: 0px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 904f9499e2f72b71048ec22096f1bbb3d82f3be1
     background-color: #333;
     width: 100%;
     position: absolute; 
 }
 
 #footer {
+<<<<<<< HEAD
     bottom: 0;
     position:absolute;
     width:100%;
@@ -27,12 +32,34 @@ footer {
     flex-flow: row nowrap;
     flex-shrink:2;
     flex-basis: 10px;
+=======
+   bottom: 0;
+   position:absolute;
+   overflow: hidden;
+   width:100%;
+   height: 50px;
+   background-color: #393939;
+   font-weight: bold;
+   clear: both;
+   font-size: 18px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   flex-flow: row nowrap;
+   flex-shrink:2;
+   flex-basis: 10px;
+>>>>>>> 904f9499e2f72b71048ec22096f1bbb3d82f3be1
+}
+#bottomtext{
+   transition: 500ms;
 }
 
 #bottomtext:hover {
-	color:rgb(74, 202, 111);
+	color:rgb(255, 203, 106);
 	transform: translateY(-2px);
-	transition: 400ms;
+    transition: 500ms;
+    font-size: 22px;
 }
 
 #footerPusher{
