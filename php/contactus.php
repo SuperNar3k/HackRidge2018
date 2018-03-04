@@ -24,7 +24,7 @@ session_start();
     <body>
         <div id = "footerPusher">
             <div id="top">
-            <h1>Talk to a Human</h1>
+                <h1>Talk to a Human</h1>
             </div>
         </div>
     </body>

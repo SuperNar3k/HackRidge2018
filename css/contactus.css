@@ -5,5 +5,8 @@
     width: 100%;
     padding: 0;
     background-image: url(../rsc/contactUs.jpeg);
-    background-size: 100% 400px;
+    background-size: 100% 425px;
+}
+#top h1{
+    margin: 0;
 }

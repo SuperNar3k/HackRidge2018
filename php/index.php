@@ -16,35 +16,40 @@ session_start();
                 $("#homeLink").addClass("active");
             });
         </script>
+        <script src="../js/index.js"></script>
 
     </head>
 
     <header id = "header"><?php include "header.php"; ?></header>
 
     <body>
-        <div id = "footerPusher" style="background-image: url(../rsc/kitchen.jpg)">
+        <div id = "footerPusher" style="background-image: url(../rsc/indexBackground.jpg)">
             <p id="maintext">Not sure what to eat? We've got you covered.</p>
             <span class="mainicons">
                 <div class="mainicons_wrapper">
                   <img class="mainicons_image" src="../rsc/recipebook.png"></img>
                   <div class="mainicons_text">
-                      <p>Search for new recipes</p>
+                      <p id="searchCaption" class = "mainicons_caption">Search for new recipes</p>
                   </div>
                 </div>
                 
                 <div class="mainicons_wrapper">
                   <img class="mainicons_image" src="../rsc/friend.png">
                   <div class="mainicons_text">
-                      <p>See what your friends like</p>
+                      <p id = "friendsCaption" class = "mainicons_caption">See what your friends like</p>
                   </div>
                 </div>
                 <div class="mainicons_wrapper">
                   <img class="mainicons_image" src="../rsc/brain.png">
                   <div class="mainicons_text">
-                      <p>View AI meal suggestions</p>
+                      <p id = "suggestionsCaption" class = "mainicons_caption">View AI meal suggestions</p>
                   </div>
                 </div>
             </span>
+
+            <div id="ourPurpose">
+                <p id = "ourPurposeText">We are here to help!</p>
+            </div>
         </div>
     </body>
 
