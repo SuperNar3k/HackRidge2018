@@ -51,7 +51,7 @@
 					*/
 					//Test page:
 					echo '<div class = "card recipe">
-					<h2>Top 1 Result</h2>
+					<h2>Top 2 Results</h2>
 					<h3>PB And J</h3>
 					<img alt = "Image: PB and J" style = "float: left;">
 					<br><ul>
@@ -61,10 +61,6 @@
 					</ul>
 					<a>Read More</a>
 					<hr>
-					</div>';
-			
-					echo '<div class = "card recipe">
-					<h2>Top 1 Result</h2>
 					<h3>PB And J</h3>
 					<img alt = "Image: PB and J" style = "float: left;">
 					<br><ul>
