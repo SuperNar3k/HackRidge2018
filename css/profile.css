@@ -30,24 +30,26 @@ div.dashboardButton:hover {
 }
 div.dashboardButton p{margin: 5px;}
 #eventsPanel{padding: 0;}
-table tr:nth-child(even){background-color: #e8cfa4;}
 #eventsPanel div{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-#tabs{background-color: #e8cfa4; /*darkened moccasin*/}
+#tabs{background-color: #ffffff;display: block; padding-top: 15px;}
 #tabs div{
-    display: inline-block;
+    background-color: rgb(4, 133, 255);
     margin: 0;
-    width: calc(50% - 2px);
-    background-color: #ffebcd; /*blanched almond*/
+    text-align: left;
+    width: 90px;
+    margin-top: 25px;margin-left:10px;font-size: 18px;
 }
-#tabs div.inactive{background-color: #e8cfa4; /*darkened moccasin*/}
+#tabs div.inactive{background-color: #ffffff;}
 #informationContainer{padding: 10px;}
 table{width: 100%;}
 th, td{
     font-family: Bookman, sans-serif;
     font-size: 18px;
-    text-align: center;
+    padding-left: 20%;
+    padding-top: 15px;
+    text-align: left;
 }
 #informationContainer div table th, td{width: 33.33%;}

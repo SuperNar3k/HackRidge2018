@@ -10,7 +10,9 @@ footer {
     width: calc(100% - 20px);
     position: absolute; 
 }
-
+#header{
+    height:55px;
+}
 #footer {
    bottom: 0;
    position:absolute;
