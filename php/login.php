@@ -1,5 +1,5 @@
 <!Doctype HTML>
-<?php 
+<?php
     session_start();
     include "database.php";
 
@@ -34,7 +34,7 @@
 
             <form id="login" class="form" action="session.php" method="post">
                 <div>
-                    <h1 style="logTitle">Log in</h1>
+                    <h id="logTitle">Log in</h>
                     <br/>
                     <?php 
                         if($loginError){
@@ -48,8 +48,12 @@
                     <input placeholder = "Enter Password" type = "password" name = "password" required>
                     <br/>
                     <br/>
-                    <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
-                    <a href="signup.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
+                    <div>
+                        <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
+                    </div>
+                        <div>
+                            <a href="signup.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
+                        </div>
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>              
             </form>
