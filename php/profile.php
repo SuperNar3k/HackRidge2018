@@ -3,7 +3,7 @@
     session_start();
     include "database.php";
     include "loginCheck.php";
-    
+    if(!isset($_GET['userID'])){header('location: index.php');}
 
     $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";
     $stmt = $pdo->prepare($sql);

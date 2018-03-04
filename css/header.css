@@ -78,8 +78,8 @@ div.headerSignIn button {
 }
 
 #loginButtonNav, #logoutButtonNav{
-    margin-left: calc(10% - 45px);
-    margin-right: calc(10% - 45px);
+        margin-left: calc(10% - 45px);
+        margin-right: calc(10% - 45px);
         position: relative;
         transition: 500ms;
 		font-family: Bookman, sans-serif;
