@@ -36,7 +36,9 @@
 
 
     if($_SESSION['userID']==(int)$_GET['userID']):
-        echo '<br><div style="background-color: rgba(4,133,255,.8); width: 170px;border-radius: 15px;text-align:center;"><a style="text-decoration:none;font-size:26px;color:white;" href="userSearch.php">Find Friends</a></div>';
+        echo '<br><a style="text-decoration:none;font-size:26px;color:white;">Add Friends: </a><br>
+        <form method="POST" action="userSearch.php"><a><input type="hidden" name="userRequesting" value="',$_SESSION['userID'],'"><input type = "email" class="input2" style="height: 24px;" placeholder = "Eg: Johnny27@gmail.com" name = "userSearch" required></a><a><button style="border-radius: 0px; height:30px" type = "submit">Send Friend Request</button>
+        </a></form>';
     endif;
 
     $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";

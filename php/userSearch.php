@@ -1,29 +1,19 @@
 <?php
+include 'database.php';
 session_start(); 
+include 'logincheck.php';
+    $sql = "SELECT * FROM users WHERE userID=:UserID";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(["UserID" => $_POST['userSearch']]); 
+    $rowCount = $stmt->rowCount();
+    
+    if($rowCount==0){header('location: profile.php?userID="',$_POST['userRequesting'],'"');}
+    else{
+        $user = $stmt->fetch(PDO::FETCH_OBJ);
+        $userID = $user->userID;
+        $sql = "INSERT INTO `usertouserfriendspending`(`requesterID`, `recipientID`) VALUES (:userID0,:userID1)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(["userID0" => $_POST['userRequesting'],"userID1" => $userID]);
+        header('location: profile.php?userID="',$_POST['userRequesting'],'"');
+    }
 ?>
-<!DOCTYPE HTML>
-<html>
-    <head>
-
-        <title>Foodle - User Search</title>
-        <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/baseCSS.css">
-        <link rel="stylesheet" href="../css/index.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    </head>
-
-    <header id = "header"><?php include "header.php"; ?></header>
-
-    <body>
-        <div id = "footerPusher">
-            <div class="card" style="width:30%;text-align: center;height:100px;">
-                f
-            </div>
-        </div>
-    </body>
-
-    <footer id = "footer"><?php include "footer.php"; ?></footer>
-
-</html>
