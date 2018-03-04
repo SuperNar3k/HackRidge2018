@@ -1,6 +1,5 @@
 <?php
 	require 'database.php';
-	session_start();//delete kager
 
 	$suggestions = array();
 
