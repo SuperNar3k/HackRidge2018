@@ -70,5 +70,9 @@ th, td{
     color:rgb(255, 203, 106);
 	transform: translateY(-2px);
     transition: 500ms;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.specialButtonCoolThing{
+    transition: 500ms;
 }
