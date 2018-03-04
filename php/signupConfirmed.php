@@ -3,6 +3,7 @@ session_start();
 //----------
 //username needs to come from session
 //----------
+    if(!empty($_POST["firstNameSignUp"]))
     if(isset($_POST["firstNameSignUp"])) {
         $firstname = $_POST["firstNameSignUp"];
        
