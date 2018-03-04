@@ -21,7 +21,11 @@ for($i = 0; $i<$pendingRequests; $i++){
             $sql = "DELETE FROM usertouserfriendspending WHERE requesterID=:userRID AND recipientID=:userID";
             $stmt = $pdo->prepare($sql);
             $stmt->execute(["userRID" => $_POST["userID"][$i], "userID" => $_POST['userPID'][0]]);
-            header('Location: profile.php');
+
+            $sql = "DELETE FROM usertouserfriendspending WHERE requesterID=:userRID AND recipientID=:userID";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(["userRID" => $_POST["userPID"][0], "userID" => $_POST['userID'][$i]]);
+            header('Location: profile.php?userID=',$_POST["userPID"][0]);
     }
     elseif(isset($_POST["deny"][$i])){
 
@@ -30,7 +34,10 @@ for($i = 0; $i<$pendingRequests; $i++){
             $sql = "DELETE FROM usertouserfriendspending WHERE requesterID=:userRID AND recipientID=:userID";
             $stmt = $pdo->prepare($sql);
             $stmt->execute(["userRID" => $_POST["userID"][$i], "userID" => $_POST['userPID'][0]]);
-            header('Location: profile.php');
+            $sql = "DELETE FROM usertouserfriendspending WHERE requesterID=:userRID AND recipientID=:userID";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(["userRID" => $_POST["userPID"][0], "userID" => $_POST['userID'][$i]]);
+            header('Location: profile.php?userID=',$_POST["userPID"][0]);
     }
 }
 ?>
