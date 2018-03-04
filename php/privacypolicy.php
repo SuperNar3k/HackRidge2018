@@ -23,7 +23,7 @@ session_start();
 
     <body>
         <div id = "footerPusher">
-
+        <p id = "pp">Our privacy policy is quiet simple, we don't have one. The moment you give us your information, we sell it to a third part for some $$$.</p>
             <!--Home Page Main Image Card-->
 
         </div>
