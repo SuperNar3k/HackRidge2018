@@ -61,5 +61,7 @@
                 <a style="margin-left:20px;color: rgb(255,153,0);font-size:20px;margin-top:8px;margin-bottom:16px;">Message Me: <br><a style="margin-left:40px;color: #333;font-size:18px;margin-top:8px;"><img style="height:30px;width:120px;opacity:.7;padding:0px" src = "../rsc/messagePicture.png"></a></a>
             ';
     endif;
-
+    if($_SESSION['userID']==(int)$_GET['userID']):
+        
+    endif;
 ?>

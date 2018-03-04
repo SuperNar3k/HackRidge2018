@@ -47,10 +47,12 @@ div.dashboardButton p{margin: 5px;}
     margin-right:10px;
     font-size: 24px;
     padding-right:2px;
+    cursor: pointer;
 }
 #tabs div a{
     text-align: right;
     float:right;
+    
 }
 #tabs div.inactive{background-color: #ffffff;
     border-left: .2rem solid rgba(4, 134, 255, 0.2);
