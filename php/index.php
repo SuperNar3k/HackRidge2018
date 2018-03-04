@@ -1,3 +1,6 @@
+<?php
+session_start(); 
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -19,7 +22,6 @@
     <header id = "header"><?php include "header.php"; ?></header>
 
     <body>
-                
         <div id = "footerPusher">
 
             <!--Home Page Main Image Card-->

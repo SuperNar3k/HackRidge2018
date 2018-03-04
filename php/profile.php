@@ -6,7 +6,7 @@
     
     $sql = "SELECT * FROM users WHERE userID=:UserID";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(["UserID" => $_SESSION['userID']]); 
+    $stmt->execute(["UserID" => (int)$_GET['userID']]); 
     $user = $stmt->fetch(PDO::FETCH_OBJ);
 
     $firstName = $user->firstName;
