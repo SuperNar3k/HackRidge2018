@@ -24,7 +24,9 @@ session_start();
     <body>
         <div id = "footerPusher">
 
-            <!--Home Page Main Image Card-->
+            <p> Our website is designed to bring you new and flavorful dishes. Using your likes and previous dishes, it can find you new recipes to create for you, family, and friends. 
+
+                </p>
 
         </div>
     </body>
