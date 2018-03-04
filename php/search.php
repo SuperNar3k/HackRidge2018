@@ -63,7 +63,7 @@
 					<hr>
 					<h3>PB And J</h3>
 					<img alt = "Image: PB and J" class = "foodImg">
-					<br><ul>
+					<ul>
 					<li>Peanut Butter</li>
 					<li>Bread</li>
 					<li>Jelly</li>
