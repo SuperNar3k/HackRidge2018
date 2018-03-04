@@ -10,7 +10,7 @@
     $data = $stmt->fetchAll(PDO::FETCH_COLUMN, 0);
 
 
-    if($_SESSION['userID']==(int)$_GET['userID'] && $pendingRequests==0):
+    if($_SESSION['userID']==(int)$_GET['userID'] && $pendingRequests!==0):
     echo '<form method="POST" action="friendsAdder.php"><table><tr><td style="color: rgba(4,133,255,.8);font-size:32px;">Pending Friend Requests</td></tr>';
 
     for($i = 0; $i <$pendingRequests; $i++){
