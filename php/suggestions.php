@@ -20,23 +20,23 @@
 			<?php 
 				include 'getSuggestions.php';
 				
-				for($suggestions as $key=>$value){
-						$recipeJSON = file_get_contents(API_GET_URL."&rId=".$key);
-						$recipeData = json_decode($recipeJSON, true);
-						
-						echo '<h3>', $recipeData['recipe']['title'], '</h3>';
-						echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
-						echo '<br><ul>';
-						for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
-							echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
-						}
-						echo '</ul>';
-						echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
-						echo '<hr>';
+				foreach($suggestions as $key => $value){
+					$recipeJSON = file_get_contents(API_GET_URL."&rId=".$key);
+					$recipeData = json_decode($recipeJSON, true);
+					
+					echo '<h3>', $recipeData['recipe']['title'], '</h3>';
+					echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
+					echo '<br><ul>';
+					for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
+						echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
 					}
-					unset($key);
-					unset($value);
-					echo '</div>';
+					echo '</ul>';
+					echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
+					echo '<hr>';
+				}
+				unset($key);
+				unset($value);
+				echo '</div>';
 			?>
 		</div>
 	</body>

@@ -4,7 +4,7 @@
 	$suggestions = array();
 
 	//Find what current user has liked
-	$sql = "SELECT * from userRecipeLikes WHERE userID = :userID";
+	$sql = "SELECT * from userrecipelikes WHERE userID = :userID";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute(['userID' => $_SESSION['userID']]);
 	$userLikes = array();
@@ -14,7 +14,7 @@
 	
 	for($i = 0; $i<count($userLikes); $i++){
 		//Find other users who have liked the same dishes
-		$sql = "SELECT * from userRecipeLikes WHERE recipeID = :recipeID";
+		$sql = "SELECT * from userrecipelikes WHERE recipeID = :recipeID";
 		$stmt = $pdo->prepare($sql);
 		$stmt->execute(['recipeID' => $userLikes[$i]]);
 		$similarUsers = $stmt->fetchAll(PDO::FETCH_COLUMN,0);
@@ -24,7 +24,7 @@
 			if(!in_array($similarUsers[$j], $reviewedUsers, true)){
 				$similarityIndex = 0;
 				//Find other dishes similar users have liked
-				$sql = "SELECT * from userRecipeLikes WHERE userID: userID";
+				$sql = "SELECT * from userrecipelikes WHERE userID =:userID";
 				$stmt = $pdo->prepare($sql);
 				$stmt->execute(['userID'=>$similarUsers[$j]]);
 				$similarUserLikes = $stmt->fetchAll(PDO::FETCH_COLUMN,1);
