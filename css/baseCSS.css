@@ -30,6 +30,12 @@ footer {
    flex-basis: 10px;
 }
 
+#bottomtext:hover {
+	color:rgb(74, 202, 111);
+	transform: translateY(-2px);
+	transition: 400ms;
+}
+
 #footerPusher{
     position:relative;
     margin:0;
