@@ -20,7 +20,7 @@
 					$results = json_decode($resultsJSON, true);
 
 					//Top 5 Results
-					echo '<div class = "card">'
+					echo '<div class = "card">';
 					if(count($results['recipes'])>=5){
 						echo '<h2>Top 5 Results</h2>';
 					}
