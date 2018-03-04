@@ -25,6 +25,9 @@ session_start();
         <div id = "footerPusher">
 
             <p> Our website is designed to bring you new and flavorful dishes. Using your likes and previous dishes, it can find you new recipes to create for you, family, and friends. 
+                Using the database from Food 2 Fork, we are able to introduce unique recipes from all around the world.
+                 We can guarantee you will find amazing flavors for your taste buds.
+
 
                 </p>
 
