@@ -66,8 +66,6 @@ div.headerSignIn button {
 
 #loginButton, #logoutButton{
 		position: relative;
-		right: 15px;
-		float: right;
 		font-family: Bookman, sans-serif;
 }
 
