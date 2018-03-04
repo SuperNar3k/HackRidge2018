@@ -24,12 +24,12 @@ session_start();
     <body>
         <div id = "footerPusher">
 
-            <p> Our website is designed to bring you new and flavorful dishes. Using your likes and previous dishes, it can find you new recipes to create for you, family, and friends. 
-                Using the database from Food 2 Fork, we are able to introduce unique recipes from all around the world.
+            <p id = "au"> Our website is designed to bring you new and flavorful dishes. Using your likes and previous dishes, it can find you new recipes to create for you, family, and friends. 
+               <br />
+            Using the database from Food 2 Fork, we are able to introduce unique recipes from all around the world.
+            <br /> 
                  We can guarantee you will find amazing flavors for your taste buds.
-
-
-                </p>
+             </p>
 
         </div>
     </body>
