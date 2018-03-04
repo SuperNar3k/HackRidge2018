@@ -4,10 +4,22 @@
     include "database.php";
     include "loginCheck.php";
     
+
+    $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(["UserID" => (int)$_GET['userID']]); 
+    $numberOfFriends = $stmt->rowCount();
+
+    $sql = "SELECT * FROM userrecipelikes WHERE userID=:UserID";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(["UserID" => (int)$_GET['userID']]); 
+    $numberOfLikes = $stmt->rowCount();
+
     $sql = "SELECT * FROM users WHERE userID=:UserID";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(["UserID" => (int)$_GET['userID']]); 
     $rowCount = $stmt->rowCount();
+
     if($rowCount==0){header('location: index.php');}
     $user = $stmt->fetch(PDO::FETCH_OBJ);
     $firstName = $user->firstName;
@@ -69,7 +81,7 @@
     <body> 
 
         <div id = "footerPusher">
-            <?php if($_SESSION['userID']===(int)$_GET['userID']):?>
+            <?php if($_SESSION['userID']==(int)$_GET['userID']):?>
                 <div style ="display: flex;min-height:100%">
                     <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(0,0,0,.1);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <p>
@@ -85,8 +97,8 @@
                         <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
                         <div id="tabs">
                             <div id="myProfileTab">My Profile<a></a></div>
-                            <div id="myFriendsTab" class="inactive">My Friends<a>0</a></div>
-                            <div id="myLikesTab" class="inactive">My Likes<a>4</a></div>
+                            <div id="myFriendsTab" class="inactive">My Friends<a><?php echo $numberOfFriends;?></a></div>
+                            <div id="myLikesTab" class="inactive">My Likes<a><?php echo $numberOfLikes;?></a></div>
                         </div>
                     </div>
 
@@ -123,8 +135,8 @@
                         <p><?php echo $firstName,' ',$lastName;?></p>
                         <div id="tabs">
                             <div id="myProfileTab">Profile<a></a></div>
-                            <div id="myFriendsTab" class="inactive">Friends<a>0</a></div>
-                            <div id="myLikesTab" class="inactive">Likes<a>4</a></div>
+                            <div id="myFriendsTab" class="inactive">Friends<a><?php echo $numberOfFriends;?></a></div>
+                            <div id="myLikesTab" class="inactive">Likes<a><?php echo $numberOfLikes;?></a></div>
                         </div>
                     </div>
 

@@ -35,7 +35,17 @@ div.headerSignIn button {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a, #searchBarForm {
+.topnav a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    margin-top:6px;
+    font-size: 20px;
+}
+
+#searchBarForm {
     float: left;
     color: black;
     text-align: center;
@@ -45,29 +55,28 @@ div.headerSignIn button {
 }
 
 #homeLink{
-		min-width: 60px;
+        min-width: 60px;
+        margin-right: calc(15% - 60px);
 }
 
 #searchBarForm{
         width: 20%;
-        padding-left: 40%;
-        padding-right: 7.5%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
 
 }
 
 #suggestionsLink{
-		width: 25%;
+		width: 20%;
 }
 
 #myProfileLink{
-		width: 25%;
+		width: 20%;
 }
 
 #loginButtonNav, #logoutButtonNav{
-        right: 15px;
-        float: right;
+        width: 20%;
         position: relative;
-        padding:14px;
         transition: 500ms;
 		font-family: Bookman, sans-serif;
 }
