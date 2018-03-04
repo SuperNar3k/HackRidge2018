@@ -1,7 +1,7 @@
 div.recipe{
 	width: 80%;
 	margin: 10px auto;
-	border-radius: 15px;
+	border-radius: 30px;
 	border: 0;
-	
+	padding: 20px;
 }
