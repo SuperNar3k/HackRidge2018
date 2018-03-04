@@ -57,19 +57,19 @@
         <div id = "footerPusher">
 
             <div style ="display: flex;min-height:100%">
-                <div style="height: 100%; width: 30%; padding: 0px; margin: 0px; border-right: .1rem solid rgba(0,0,0,.1);margin-top:20px;margin-left:20px;">
+                <div style="height: 100%; width: 20%; padding: 0px; margin: 0px; border-right: .1rem solid rgba(0,0,0,.1);margin-top:20px;margin-left:20px;">
                     <p>
                         <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
                     </p>
                     <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
                     <div id="tabs">
-                        <div id="myProfileTab">My Profile</div>
-                        <div id="myGroupsTab" class="inactive">My Groups</div>
-                        <div id="myLikesTab" class="inactive">My Likes</div>
+                        <div id="myProfileTab">My Profile<a></a></div>
+                        <div id="myGroupsTab" class="inactive">My Groups<a>2</a></div>
+                        <div id="myLikesTab" class="inactive">My Likes<a>4</a></div>
                     </div>
                 </div>
 
-                <div class="profileViewer" style="height: 100%; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
+                <div class="profileViewer" style="height: 100%; width: 80%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
                     <script>
                         $(document).ready(function(){
                             $("#profileViewer").load("myProfile.php");
