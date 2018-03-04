@@ -34,7 +34,7 @@
 						echo '<h3>', $recipeData['recipe']['title'], '</h3>';
 						echo '<img src = "', $recipeData['recipe']['img_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" style = "float:left;">';
 						echo '<ul>';
-						for($j = 0; $j<count($recipeData['recipe']['ingredients']) $j++){
+						for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
 							echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
 						}
 						echo '</ul>';
