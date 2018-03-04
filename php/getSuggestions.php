@@ -1,6 +1,4 @@
 <?php
-	require 'database.php';
-
 	$suggestions = array();
 
 	//Find what current user has liked

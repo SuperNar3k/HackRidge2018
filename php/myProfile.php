@@ -6,6 +6,7 @@
     $stmt = $pdo->prepare($sql);
     $stmt->execute(["UserID" => (int)$_GET['userID']]); 
     $rowCount = $stmt->rowCount();
+    
     if($rowCount==0){header('location: index.php');}
     $user = $stmt->fetch(PDO::FETCH_OBJ);
     $firstName = $user->firstName;
