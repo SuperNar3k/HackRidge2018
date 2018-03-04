@@ -41,11 +41,9 @@
                             echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
                         }
                     ?>
-                    <p>Email</p>
-                    <input placeholder = "example@gmail.com" type = "email" name = "email" autofocus required>
+                    <input placeholder = "Email*" type = "email" name = "email" autofocus required>
                     <br/><br/>
-                    <p>Password</p>
-                    <input placeholder = "example123" type = "password" name = "password" required>
+                    <input placeholder = "Password*" type = "password" name = "password" required>
                     <br/>
                     <br/>
                     <div>

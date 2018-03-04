@@ -7,11 +7,15 @@ body{
 #login{
     display: inline-block;
     margin: 10% auto;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
 }
 #login div{
     display: inline-block;
+}
+
+br{
+    padding: 10px;
 }
 #loginButton{
     transition: 300ms;
@@ -65,6 +69,7 @@ body{
     font-family: Bookman, sans-serif;
     font-size: 24px;
 }
+
 #logTitle {
     font-size: 30px;
     margin: 10px;
@@ -91,7 +96,7 @@ body{
     outline: none;
     border: 0px;
     border: 1px solid rgba(0,0,0,0.18);
-    padding: 10px 0px 5px 5px;
+    padding: 12px;
 }
 
 .logButton:hover {
@@ -102,12 +107,6 @@ body{
 }
 .logButton:focus {
     outline: none;
-}
-
-.loghr {
-    border: 1px solid grey;
-    margin-bottom: 35px;
-    width: 70%;
 }
 
 .field {
