@@ -63,8 +63,10 @@ div.headerSignIn button {
 }
 
 #loginButton, #logoutButton{
-		top: 5px;
-		right: 0px;
+		position: relative;
+		right: 15px;
+		float: right;
+		font-family: Bookman, sans-serif;
 }
 
 #logo{
@@ -74,17 +76,33 @@ div.headerSignIn button {
 		left: 5px;
 }
 
-#searchBar{
+#searchBarWrapper{
 		border-radius: 15px;
 		border-width: 0;
 		background-color: #aaa;
-		padding: 5px;
-		padding-left: 10px;
-        color: #fff;
-        width: 100%;
+    color: #fff;
+		width: 75%;
+		height: 35px;
+		padding: 0;
+}
+
+#searchBar{
+		position: relative;
+		margin: 0;
+		left: 0;
+		top: 5px;
+		border: 0;
+		background-color: #aaa;
+		padding-left: 40px;
+		background-image: url('../rsc/searchBarMG.png');
+		background-repeat: no-repeat;
+		background-position: 10px, 10px;
+		background-size: 20px, 20px;
+}
+#searchBar:focus{
+		outline: none;
 }
 
 #searchSubmit{
-		height: 40px;
-		width: 60px;
+		display: none;
 }

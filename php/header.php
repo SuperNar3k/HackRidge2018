@@ -4,8 +4,10 @@
     <nav id = "navBar" class = "topnav">
     	<a id = "homeLink" href = "index.php"><img id = "logo" src = "../rsc/text_logo.png"></a>
 			<form id = "searchBarForm" method = "get" action = "search.php">	
-				<input type = "text" id = "searchBar" name = "query" placeholder = "Search for recipes by name">
-				<input type = "image" src = "../rsc/searchBarMG.png" id = "searchSubmit" name = "submit" alt = "Search"> 
+				<div id = "searchBarWrapper">
+					<input type = "text" id = "searchBar" name = "query" placeholder = "Search for recipes by name">
+					<input type = "submit" id = "searchSubmit" name = "submit"> 
+				</div>	
 			</form>
 			<?php if(isset($_SESSION["userID"])) : ?><!--Checking if student is logged in for different nav bar-->
         <a class = "baseText" id = "suggestionsLink" href = "suggestions.php">What Should I Eat Today?</a>
