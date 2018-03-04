@@ -83,7 +83,7 @@
         <div id = "footerPusher">
             <?php if($_SESSION['userID']==(int)$_GET['userID']):?>
                 <div style ="display: flex;min-height:100%">
-                    <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(0,0,0,.1);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
+                    <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(255,153,0,.3);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <p>
                             <!--Get User Icon-->
                             <?php
