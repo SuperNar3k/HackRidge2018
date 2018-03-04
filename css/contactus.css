@@ -1,12 +1,82 @@
 #top{
     position:relative;
     margin: 0;
-    height: 250px;
+    height: 350px;
     width: 100%;
     padding: 0;
     background-image: url(../rsc/contactUs.jpeg);
     background-size: 100% 425px;
 }
-#top h1{
+.top{
     margin: 0;
+    padding-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "proxima-nova-n3","proxima-nova";
+}
+
+.topinfo{
+    line-height: 17px;
+    font-family: "proxima-nova-n3","proxima-nova";
+    margin: 0;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.left{  
+    text-align: left;
+    position: relative;
+    width: auto;
+}
+
+.left_h2{
+    margin-top: 0;
+    font-family: "proxima-nova-n3","proxima-nova";
+    color: #1a468d;
+    line-height: 1.25;
+    box-sizing: border-box;
+    font-weight: 300;
+    margin: .5em 0;
+    font-size: 34px;
+
+}
+
+.left_h4{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    color: #1a468d;
+}
+
+.left_p{    
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.right{
+    position: relative;
+    text-align: right;
+}
+
+.right_h3{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    color: #1a468d;
+}
+
+.right_p{
+    text-align: right;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
 }
