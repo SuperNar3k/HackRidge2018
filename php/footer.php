@@ -4,6 +4,5 @@
 	<a id="bottomtext" href="faq.php">FAQ</a>
 	<a id="bottomtext" href="privacypolicy.php">Privacy Policy</a>
 	<a id="bottomtext" href="termsofuse.php">Terms of Use</a>
-	<a id="bottomtext" href="help.php">Help</a>
 	<a id="bottomtext" href="contactus.php">Contact Us</a>
 </div>
