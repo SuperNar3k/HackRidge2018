@@ -2,15 +2,8 @@
 <?php
     session_start();
     include "database.php";
-
-    $loginError = false;
-
-    // Checking for error cookie
-
-        if(isset($_COOKIE['LOGINERROR'])) {
-            setcookie("LOGINERROR", "", time()-3600);
-            $loginError = true;
-        }
+    $invalid = false;
+    if(isset($_GET['login'])){$invalid = true;}
 
 ?>
 <html>
@@ -38,7 +31,7 @@
                     <hr class="loghr">
                     <br/>
                     <?php 
-                        if($loginError){
+                        if($invalid){
                             echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
                         }
                     ?>

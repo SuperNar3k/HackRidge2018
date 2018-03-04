@@ -34,32 +34,29 @@
     echo '</table></form>';
     endif;
 
-    $sql = "SELECT * FROM usertouserfriends WHERE recipientID=:UserID";
+    $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(["UserID" => (int)$_GET['userID']]); 
-    $pendingRequests = $stmt->rowCount();
+    $numberOfFriends = $stmt->rowCount();
     $data = array();
-    $data = $stmt->fetchAll(PDO::FETCH_COLUMN, 0);
-
+    $data = $stmt->fetchAll();
 
     echo 
     '<table>';
 
-    for($i = 0; $i <$friends; $i++){
-
+    for($i = 0; $i <$numberOfFriends; $i++){
+         if($data[$i][0]==$_SESSION['userID']){$friendID = $data[$i][1];}
+             else{$friendID = $data[$i][0];}
         $sql = "SELECT * FROM users WHERE userID=:UserID";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(["UserID" => $data[$i]]);     
+        $stmt->execute(["UserID" => $friendID]);     
         $user = $stmt->fetch(PDO::FETCH_OBJ);
         $firstName = $user->firstName;
         $lastName = $user->lastName;
 
         echo '<tr>
-                <td><input name = "userPID[', $i,']" value = "',(int)$_GET['userID'],'" class = "classicColor" type = "hidden"></td>
                 <td><input name = "userID[', $i,']" value = "',$data[$i],'" class = "classicColor" type = "hidden">',$firstName,' ',$lastName,'</td>';
-        echo '<td><input name = "deny[', $i,']" value = "Deny" class = "classicColor" type = "submit"></td>';
-        echo '<td><input name = "accept[', $i,']" value = "Accept" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color:red"></td>';
-        echo '</tr>';
+       echo '</tr>';
 
     }
 

@@ -2,10 +2,15 @@
 <?php session_start();
 
     // Checking for issues if previus signup
-
-        if(isset($_COOKIE['signupERROR'])) {
-            $loginError = $_COOKIE['signupERROR'];
-            setcookie("signupERROR", "", time()-3600);
+        $invalidP = false;
+        $invalidE = false; 
+        if(isset($_GET['signup'])) {
+            if($_GET['signup']==="passwordsdontmatch"){
+                $invalidP = true;
+            }
+            else{
+                $invalidE = true;
+            }
         }
 
 ?>
@@ -32,7 +37,15 @@
                     <form id="signup" class="form" action="signupConfirmed.php" method="post">
                             <h2 id="logTitle">Sign Up</h2>
                             <hr class="loghr">
+                            <?php 
+                                if($invalidP){
+                                    echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Passwords do not match</p>';
+                                }
+                                else if($invalidE){
+                                    echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">An account with that email already exists</p>';
 
+                                }
+                            ?>
                         <label class="field">
                             <input type="text" placeholder="First Name*" name="firstNameSignUp" id="firstNameSignUp" class="input" required>
                         </label>

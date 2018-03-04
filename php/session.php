@@ -24,8 +24,7 @@
 
         if ($rowCount != 1) { 
 
-            setcookie("LOGINERROR","error", time() + (86400 * 30), "/");
-            header("location: login.php");
+            header("location: login.php?login=invalid");
 
         } else{
             // If the user asswordHash;
@@ -39,10 +38,9 @@
                     // If successfull, start SESSION with "StudentID"
 
                         $_SESSION["userID"] = $userID;
-                        header('Location: index.php'); 
+                        header('Location: index.php?login=invalid'); 
                 } else{
-                    setcookie("LOGINERROR","error", time() + (86400 * 30), "/");
-                    header("location: login.php");
+                    header("location: login.php?login=invalid");
                 }
         }
 ?>

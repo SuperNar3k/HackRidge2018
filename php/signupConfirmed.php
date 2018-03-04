@@ -48,13 +48,11 @@ session_start();
 
     if ($rowCountemail == 1) { 
         
-        setcookie("signupERROR","That email is already taken.", time() + (86400 * 30), "/");
-        header("location: signup.php");
+        header("location: signup.php?signup=emailtaken");
 
     }else if ($userpassword != $userpasswordConfirm) { 
         
-        setcookie("signupERROR","Your password does not match the other.", time() + (86400 * 30), "/");
-        header("location: signup.php");
+        header("location: signup.php?signup=passwordsdontmatch");
         
     }else{ 
         //if only data is unique
