@@ -45,13 +45,13 @@
                     echo'
                         <table style="width=100%;" class = "listing">
                             <tr>
-                                <td><label>Phone :</label></td>
-                                <td><input name="phone" type="text" value="',$Phone,'"></td>
-                            </tr>
+                                <td><label>Phone :</label></td>';
+                                if(!empty($phone)){echo'<td><input name="phone" type="text" value="',$Phone,'"></td>';}else{echo'<td><input name="phone" type="text" placeholder="Eg: 630 542 8972"></td>';}
+                            echo'</tr>
                             <tr>
-                                <td><label>Address :</label></td>
-                                <td><input name="address" maxlength="32" type="text" value="',$Address,'" ></td>
-                            </tr>
+                                <td><label>Address :</label></td>';
+                                if(!empty($phone)){echo'<td><input name="address" maxlength="32" type="text" value="',$Address,'" ></td>';}else{echo'<td><input name="address" maxlength="32" type="text" placeholder="78S 738 Winchester Ave" ></td>';}
+                            echo'</tr>
                             <tr>
                                 <td><label>Birth Day :</label></td>
                                 <td><input name="birthdate" type="date" value="',$BirthDate,'"></td>

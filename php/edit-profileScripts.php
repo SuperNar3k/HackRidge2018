@@ -31,7 +31,6 @@
             $stmt->execute(["about" => $_POST['about'], "userID" => $_SESSION['userID']]);  
         }
 
-    // Setting cookie for Submit confirmation and rerouting user
     
-    header('Location: profile.php?userID='.$_POST["userPID"][0]);    
+    header('Location: profile.php?userID='.$_SESSION["userID"][0]);    
 ?>
