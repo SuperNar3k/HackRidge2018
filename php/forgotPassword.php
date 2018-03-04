@@ -26,7 +26,7 @@
 
             <form id="login" class="form" action="sendRecoveryEmail.php" method="post">
                 <div>
-                    <h id="logTitle">Log in</h>
+                    <h id="logTitle">Forgot My Password</h>
                     <hr class="loghr">
                     <br/>
                     <?php 
