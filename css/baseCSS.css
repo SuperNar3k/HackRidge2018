@@ -88,7 +88,7 @@ input.classicColor {
 
 /* Texts */
 p{
-    font-family: Bookman, sans-serif;
+    font-family: "Bookman", "sans-serif";
     text-align: center;
 }
 .baseText {
@@ -155,7 +155,7 @@ div.panel p{
 }
 
 #au{
-    font-family: BookmanAr, sans-serif;
+    font-family: "proxima-nova-n3","proxima-nova";
     font-size: 25px;
     margin-top: 0px;
     padding-top: 375px;

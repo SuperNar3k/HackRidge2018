@@ -44,7 +44,7 @@
 }
 
 .left_h4{
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova-n3","proxima-nova";
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
@@ -55,7 +55,7 @@
     text-align: left;
     font-size: 16px;
     color: #333;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova-n3", "proxima-nova";
     font-style: normal;
     font-weight: 100;
 }
@@ -66,16 +66,17 @@
 }
 
 .right_h3{
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova-n3","proxima-nova";
     font-style: normal;
     font-weight: 100;
+    margin-top: 15px;
     font-size: 32px;
     color: #1a468d;
 }
 
 .right_p{
     text-align: right;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova-n3","proxima-nova";
     font-style: normal;
     font-weight: 100;
     font-size: 16px;
