@@ -40,10 +40,12 @@
 }
 
 #wrapperDiv{
-    margin-top:500px;
-    padding-bottom:200px;
+		max-width: 100%;
+    margin: 100px auto;
+		padding: 20px;
+		background-color: rgba(255, 153, 0, 0.3);
 }
 
-#ourPurposeText{
-    visibility: hidden;
+body{
+	overflow-x: hidden;
 }

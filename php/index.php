@@ -9,14 +9,17 @@ session_start();
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/baseCSS.css">
         <link rel="stylesheet" href="../css/index.css">
+        <link href="../lib/aos-master/dist/aos.css" rel="stylesheet">
+        <script src="../lib/aos-master/dist/aos.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
                 $("#homeLink").addClass("active");
+                AOS.init();
             });
         </script>
-        <script src="../js/index.js"></script>
+        <!--<script src="../js/index.js"></script>-->
 
     </head>
 
@@ -47,8 +50,10 @@ session_start();
                 </div>
             </span>
 
-            <div id="wrapperDiv">
-                <p id = "ourPurposeText">We are here to help!</p>
+            <div id="wrapperDiv" data-aos="fade-left">
+                <img src="../rsc/text_logo.png" style = "display:block; margin:0 auto;">
+                <p style = "margin-top: 50px; margin-bottom: 0px;">Powered By </p>
+                <img src="http://food2fork.com/F2F/static/images/webLogo.png" style = "display:block; margin:0 auto;">
             </div>
         </div>
     </body>
