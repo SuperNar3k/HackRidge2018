@@ -11,6 +11,31 @@ footer {
     width: calc(100% - 20px);
     position: absolute; 
 }
+
+#footer {
+	bottom: 0;
+   position:absolute;
+   width:100%;
+   height: 50px;
+   background-color: #393939;
+   font-weight: bold;
+   clear: both;
+   font-size: 18px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   flex-flow: row nowrap;
+   flex-shrink:2;
+   flex-basis: 10px;
+}
+
+#bottomtext:hover {
+	color:rgb(74, 202, 111);
+	transform: translateY(-2px);
+	transition: 400ms;
+}
+
 #footerPusher{
     position:relative;
     margin:0;
