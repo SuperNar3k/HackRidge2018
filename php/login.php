@@ -42,10 +42,10 @@
                         }
                     ?>
                     <p>Email</p>
-                    <input placeholder = "Enter Email" type = "email" name = "email" autofocus required>
+                    <input placeholder = "example@gmail.com" type = "email" name = "email" autofocus required>
                     <br/><br/>
                     <p>Password</p>
-                    <input placeholder = "Enter Password" type = "password" name = "password" required>
+                    <input placeholder = "example123" type = "password" name = "password" required>
                     <br/>
                     <br/>
                     <div>
