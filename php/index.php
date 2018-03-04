@@ -8,6 +8,7 @@ session_start();
         <title>Foodle - Home</title>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/baseCSS.css">
+        <link rel="stylesheet" href="../css/index.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../js/headerJQuery.js"></script>
@@ -23,20 +24,26 @@ session_start();
 
     <body>
         <div id = "footerPusher" style="background-image: url(../rsc/kitchen.jpg)">
-            <p id="maintext">Not sure what to make? We gotchu covered.</p>
+            <p id="maintext">Not sure what to make? We have you covered.</p>
             <span class="mainicons">
-                <img class="mainicons_image" src="../rsc/recipebook.png"></img>
-                <div class="mainicons_text">
-                    <span>Search new recipes!</span>
+                <div class="mainicons_wrapper">
+                  <img class="mainicons_image" src="../rsc/recipebook.jpg"></img>
+                  <div class="mainicons_text">
+                      <p>Search for new recipes</p>
+                  </div>
                 </div>
-
-                <img class="mainicons_image" src="../rsc/friend.png">
-                <div class="mainicons_text">
-                    <span>See what your friends like!</span>
+                
+                <div class="mainicons_wrapper">
+                  <img class="mainicons_image" src="../rsc/friend.jpg">
+                  <div class="mainicons_text">
+                      <p>See what your friends like</p>
+                  </div>
                 </div>
-                <img class="mainicons_image" src="../rsc/brain.png">
-                <div class="mainicons_text">
-                    <span>API Suggests food you should try!</span>
+                <div class="mainicons_wrapper">
+                  <img class="mainicons_image" src="../rsc/brain.jpg">
+                  <div class="mainicons_text">
+                      <p>View AI meal suggestions</p>
+                  </div>
                 </div>
             </span>
         </div>
