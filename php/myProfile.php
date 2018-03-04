@@ -62,6 +62,6 @@
             ';
     endif;
     if($_SESSION['userID']==(int)$_GET['userID']):
-        
+        <button></button>
     endif;
 ?>
