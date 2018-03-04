@@ -30,28 +30,28 @@
         <div id ="footerpusher">
                 <div class="body">
                     <form id="signup" class="form" action="signupConfirmed.php" method="post">
-                            <h2 class="logTitle">Sign Up</h2>
+                            <h2 id="logTitle">Sign Up</h2>
                             <hr class="loghr">
 
                         <label class="field">
-                            <input type="text" placeholder="First Name*" name="firstNameSignUp" id="firstNameSignUp" class="input">
+                            <input type="text" placeholder="First Name*" name="firstNameSignUp" id="firstNameSignUp" class="input" required>
                         </label>
                 
                         <label class="field">
-                            <input type="text" placeholder="Last Name*" name="lastNameSignUp" id="lastNameSignUp" class="input">
+                            <input type="text" placeholder="Last Name*" name="lastNameSignUp" id="lastNameSignUp" class="input" required>
                         </label>        
 
                         <label class="field">
-                            <input type="text" placeholder="Email*" name="emailSignUp" id="emailSignUp" class="input">
+                            <input type="text" placeholder="Email*" name="emailSignUp" id="emailSignUp" class="input" required>
                         </label>  
 
                         <label class="field">     
-                            <input type="password" placeholder="Password*" name="passwordSignUp" id="passwordSignUp" class="input">
+                            <input type="password" placeholder="Password*" name="passwordSignUp" id="passwordSignUp" class="input" required>
                         </label>
 
                         <label class="field">
                             
-                            <input type="password" placeholder="Confirm Password*" name="passwordConfirmSignUp" id="passwordConfirmLogIn" class="input">
+                            <input type="password" placeholder="Confirm Password*" name="passwordConfirmSignUp" id="passwordConfirmLogIn" class="input" required>
                         </label>
 
                         <a href="login.php" id="newAccount" style="padding:10px;">Have an account?</a>

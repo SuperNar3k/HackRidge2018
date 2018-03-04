@@ -35,15 +35,16 @@
             <form id="login" class="form" action="session.php" method="post">
                 <div>
                     <h id="logTitle">Log in</h>
+                    <hr class="loghr">
                     <br/>
                     <?php 
                         if($loginError){
                             echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
                         }
                     ?>
-                    <input placeholder = "Email*" type = "email" name = "email" autofocus required>
+                    <input class="input2" placeholder = "Email*" type = "email" name = "email" autofocus required>
                     <br/><br/>
-                    <input placeholder = "Password*" type = "password" name = "password" required>
+                    <input class="input2" placeholder = "Password*" type = "password" name = "password" required>
                     <br/>
                     <br/>
                     <div>
