@@ -34,11 +34,11 @@
 
             <form id="login" class="form" action="session.php" method="post">
                 <div>
-                    <h1 style="logTitle">Log in</p>
+                    <h1 style="logTitle">Log in</h1>
                     <br/>
                     <?php 
                         if($loginError){
-                            echo '<p style = "color: red; font-weight: bold;">Incorrect email or password</p>';
+                            echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
                         }
                     ?>
                     <p>Email</p>

@@ -18,7 +18,7 @@ body{
     transition: 300ms;
     border: 0px;
     padding: 10px;
-    background-color: orange;
+    background-color: rgb(4, 133, 255);
     cursor: pointer;
     height: 50px;
     width: 70%;
@@ -26,11 +26,10 @@ body{
     margin-top: 30px;
     font-weight: 100;
     border-radius: 2px;
-    color: white;
 }
 
 #loginButton:hover{
-    background-color: darkorange;
+    background-color: rgb(0, 74, 143);
     transform: translateY(-5px);
     box-shadow: 0px 0px 2px 0px black;
     transition: 300ms;
@@ -38,14 +37,15 @@ body{
 
 #login p{
     margin: 5px 0px;
-    color: orange;
+    color: rgb(4, 133, 255);
     text-align: left;
     font-family: Bookman, sans-serif;
     font-size: 24px;
 }
 
 #login {
-    background-color: rgba(0, 132, 255, 0.678);
+    background-color: white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
 #newAccount:hover{
@@ -57,7 +57,7 @@ body{
     transition: 500ms;
     text-decoration: none;
     display: block;
-    color: orange;
+    color: rgb(4, 133, 255);
     cursor: pointer;
     font-size: 14px;
 }
@@ -67,7 +67,6 @@ body{
     font-size: 24px;
 }
 .logTitle {
-    color: #393939;
     font-size: 30px;
     margin: 10px;
     text-transform: uppercase;
