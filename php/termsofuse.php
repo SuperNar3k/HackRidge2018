@@ -8,7 +8,16 @@ session_start();
         <title>Foodle - Terms of Use</title>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/baseCSS.css">
-
+        <style>
+            h1{
+                text-align: left ;
+                font-family: Bookman, sans-serif;
+                font-size: 18px;
+                margin-left: 100px;
+                margin-right: 100px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+            }
+        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../js/headerJQuery.js"></script>
         <script>

@@ -8,9 +8,9 @@ session_start();
         <title>Foodle - Contact Us</title>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/baseCSS.css">
+        <link rel="stylesheet" href="../css/contactus.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="../js/headerJQuery.js"></script>
         <script>
             $(document).ready(function(){
                 $("#homeLink").addClass("active");
@@ -23,9 +23,9 @@ session_start();
 
     <body>
         <div id = "footerPusher">
-
-            <!--Home Page Main Image Card-->
-
+            <div id="top">
+            <h1>Talk to a Human</h1>
+            </div>
         </div>
     </body>
 
