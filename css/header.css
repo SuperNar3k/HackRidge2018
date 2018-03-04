@@ -50,8 +50,10 @@ div.headerSignIn button {
 }
 
 #searchBarForm{
-        width: 25%;
-        padding-left: 15px;
+        width: 20%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+
 }
 
 #suggestionsLink{
@@ -82,7 +84,8 @@ div.headerSignIn button {
 		background-color: #aaa;
     color: #fff;
 		width: 75%;
-		height: 35px;
+        height: 35px;
+        min-width: 200px;
 		padding: 0;
 }
 
@@ -97,7 +100,8 @@ div.headerSignIn button {
 		background-image: url('../rsc/searchBarMG.png');
 		background-repeat: no-repeat;
 		background-position: 10px, 10px;
-		background-size: 20px, 20px;
+        background-size: 20px, 20px;
+        width: 70%;
 }
 #searchBar:focus{
 		outline: none;
