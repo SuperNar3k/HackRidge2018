@@ -12,7 +12,6 @@
         <title>Foodle - Login</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="headerJQuery.js"></script>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/baseCSS.css">
