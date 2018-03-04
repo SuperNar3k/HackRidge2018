@@ -37,7 +37,6 @@ div.headerSignIn button {
 /* Style the links inside the navigation bar */
 .topnav a, #searchBarForm {
     float: left;
-    display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 0px;
@@ -64,7 +63,9 @@ div.headerSignIn button {
 		width: 25%;
 }
 
-#loginButton, #logoutButton{
+#loginButtonNav, #logoutButtonNav{
+        right: 15px;
+        float: right;
 		position: relative;
 		font-family: Bookman, sans-serif;
 }
