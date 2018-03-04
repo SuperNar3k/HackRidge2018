@@ -3,7 +3,7 @@ body{
     margin: 0px;
     background-color: #ffffff;
     min-height: 100%;
-		font-family: Bookman, sans-serif;
+	font-family: Bookman, sans-serif;
 }
 footer {
     margin: 0px;
@@ -149,8 +149,7 @@ div.panel p{
     z-index:1;
 }
 #pp{
-    padding-top: 100px;
     font-family: Bookman, sans-serif;
-    font-size: 50px;
-    font-family: Bookman, sans-serif;
+    font-size: 40px;
+    margin-top: -10px;
 }

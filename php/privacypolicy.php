@@ -23,10 +23,12 @@ session_start();
 
     <body>
         <div id = "footerPusher">
+            <br></br>
+        <div style="margin-left: 100px; margin-right: 100px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         <p id = "pp">Our privacy policy is quiet simple, we don't have one. The moment you give us your information, we sell it to a third party for some $$$.</p>
-        <img id = "pp" src="https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif" ></img>
+        <img style="display:block; margin:0 auto" src="https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif" ></img>
             <!--Home Page Main Image Card-->
-
+        </div>
         </div>
     </body>
 
