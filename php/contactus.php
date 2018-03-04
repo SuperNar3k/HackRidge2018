@@ -27,7 +27,7 @@ session_start();
                     <h4 class="top">Talk to a Human</h4>
                     <p class="topinfo">You're not going to hit a ridiculously long phone menu when you call us. Your email
                         <br></br>isn't going to the inbox abyss, never to be seen or heard from again.
-                        <br></br>At Foodle, weprovide the exceptional service we'd want to experience ourselves!</p>
+                        <br></br>At Foodle, we provide the exceptional service we'd want to experience ourselves!</p>
                 </div>
             <div style="display: flex; margin-left:150px; margin-right:150px;">
                 <div class="left">
