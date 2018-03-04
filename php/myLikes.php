@@ -1,7 +1,7 @@
 <?php
   require 'database.php';
-  require 'loginCheck.php';
   session_start();
+  require 'loginCheck.php';
   echo '<link rel="stylesheet" href="../css/recipeList.css">';
   
   $sql = "SELECT * FROM userrecipelikes WHERE userID= :userID";
