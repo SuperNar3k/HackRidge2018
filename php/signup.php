@@ -30,7 +30,7 @@
         <div id ="footerpusher">
                 <div class="body">
                     <form id="signup" class="form" action="signupConfirmed.php" method="post">
-                            <h2 class="logTitle">Sign Up</h2>
+                            <h2 id="logTitle">Sign Up</h2>
                             <hr class="loghr">
 
                         <label class="field">
