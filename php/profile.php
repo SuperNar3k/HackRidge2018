@@ -59,7 +59,14 @@
                 <div style ="display: flex;min-height:100%">
                     <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(0,0,0,.1);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <p>
-                            <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
+                            <!--Get User Icon-->
+                            <?php
+                              $sql = "SELECT imageFilePath FROM users WHERE userID = :userID";
+                              $stmt = $pdo->prepare($sql);
+                              $stmt->execute(['userID' => $_SESSION['userID']]);
+                              $userIconPath = $stmt->fetchAll();
+                              echo '<img id = "userProfileImage" src = "../rsc/userIcons/', $userIconPath[0],'">';
+                            ?>
                         </p>
                         <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
                         <div id="tabs">
