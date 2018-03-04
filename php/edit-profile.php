@@ -57,7 +57,7 @@
                                 </tr>
                                 <tr>
                                     <td><label>About section :</label></td><td>
-                                    <textarea rows="4" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" cols="36" maxlength="128" style="overflow:hidden" width="250" name="about" form="eventCreator">', $About, '</textarea></td>
+                                    <textarea rows="4" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" cols="36" maxlength="128" style="overflow:hidden" width="250" name="about" form="login">', $About, '</textarea></td>
                                 </tr>
                                 <tr>
                                 <td></td>
