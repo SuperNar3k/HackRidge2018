@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<?php include 'database.php';?>
+<?php include 'database.php';
+	session_start();
+?>
 <html>
 	<head>
 		<title>Foodle - Search</title>
 		<link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../css/baseCSS.css">
+		<link rel="stylesheet" href="../css/search.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
@@ -23,7 +26,7 @@
 					$results = json_decode($resultsJSON, true);
 
 					//Top 5 Results
-					echo '<div class = "card">';
+					echo '<div class = "card recipe">';
 					if(count($results['recipes'])>=5){
 						echo '<h2>Top 5 Results</h2>';
 					}
@@ -35,7 +38,7 @@
 						$recipeData = json_decode($recipeJSON, true);
 						
 						echo '<h3>', $recipeData['recipe']['title'], '</h3>';
-						echo '<img src = "', $recipeData['recipe']['img_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" style = "float:left;">';
+						echo '<img src = "', $recipeData['recipe']['img_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
 						echo '<br><ul>';
 						for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
 							echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
@@ -47,11 +50,20 @@
 					echo '</div>';
 					*/
 					//Test page:
-					echo '<div class = "card" style = "width: 80%; margin: 10px;">
-					<h2>Top 1 Result</h2>
+					echo '<div class = "card recipe">
+					<h2>Top 2 Results</h2>
 					<h3>PB And J</h3>
-					<img alt = "Image: PB and J" style = "float: left;">
+					<img alt = "Image: PB and J" class = "foodImg">
 					<br><ul>
+					<li>Peanut Butter</li>
+					<li>Bread</li>
+					<li>Jelly</li>
+					</ul>
+					<a>Read More</a>
+					<hr>
+					<h3>PB And J</h3>
+					<img alt = "Image: PB and J" class = "foodImg">
+					<ul>
 					<li>Peanut Butter</li>
 					<li>Bread</li>
 					<li>Jelly</li>
@@ -62,5 +74,5 @@
 			?>
 		</div>
 	</body>
-	<footer><?php include 'footer.php'?></footer>
+	<footer id = "footer"><?php include 'footer.php'?></footer>
 </html>

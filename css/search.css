@@ -1,0 +1,11 @@
+div.recipe{
+	width: 50%;
+	margin: 10px auto;
+	border-radius: 30px;
+	border: 0;
+	padding: 20px;
+}
+
+img.foodImg{
+	float: left;
+}

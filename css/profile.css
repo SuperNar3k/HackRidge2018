@@ -36,15 +36,26 @@ div.dashboardButton p{margin: 5px;}
 }
 #tabs{background-color: #ffffff;display: block; padding-top: 15px;}
 #tabs div{
-    background-color: rgb(4, 133, 255);
+    background-color: rgba(4, 134, 255, 0.08);
+    border-left: .2rem solid rgb(4,133,255);
     margin: 0;
     text-align: left;
-    width: 90px;
-    margin-top: 25px;margin-left:10px;font-size: 18px;
+    width: calc(100%-52);
+    padding-left: 30px;
+    margin-top: 25px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size: 24px;
+    padding-right:2px;
 }
-#tabs div.inactive{background-color: #ffffff;}
+#tabs div a{
+    text-align: right;
+    float:right;
+}
+#tabs div.inactive{background-color: #ffffff;
+    border-left: .2rem solid rgba(4, 134, 255, 0.2);
+}
 #informationContainer{padding: 10px;}
-table{width: 100%;}
 th, td{
     font-family: Bookman, sans-serif;
     font-size: 18px;
