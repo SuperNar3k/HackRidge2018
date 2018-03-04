@@ -40,10 +40,10 @@
 }
 
 #wrapperDiv{
-		max-width: 100%;
+    max-width: 100%;
     margin: 100px auto;
-		padding: 20px;
-		background-color: rgba(255, 153, 0, 0.3);
+    padding: 20px;
+    background-color: rgba(255, 153, 0, 0.3);
 }
 
 body{

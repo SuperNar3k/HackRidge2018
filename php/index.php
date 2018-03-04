@@ -19,7 +19,6 @@ session_start();
                 AOS.init();
             });
         </script>
-        <!--<script src="../js/index.js"></script>-->
 
     </head>
 
@@ -50,7 +49,7 @@ session_start();
                 </div>
             </span>
 
-            <div id="wrapperDiv" data-aos="fade-left">
+            <div id="wrapperDiv" data-aos="fade-in">
                 <img src="../rsc/text_logo.png" style = "display:block; margin:0 auto;">
                 <p style = "margin-top: 50px; margin-bottom: 0px;">Powered By </p>
                 <img src="http://food2fork.com/F2F/static/images/webLogo.png" style = "display:block; margin:0 auto;">
