@@ -7,8 +7,9 @@
     $sql = "SELECT * FROM users WHERE userID=:UserID";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(["UserID" => (int)$_GET['userID']]); 
+    $rowCount = $stmt->rowCount();
+    if($rowCount==0){header('location: index.php');}
     $user = $stmt->fetch(PDO::FETCH_OBJ);
-
     $firstName = $user->firstName;
     $lastName = $user->lastName;
 ?>
@@ -21,8 +22,32 @@
         <link rel="stylesheet" href="../css/profile.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="../js/headerJQuery.js"></script>
         
+        <script>
+            var myProfileTabActive = true;
+
+            // Manages tab color to indicate which tab you are on
+
+                $(document).ready(function(){
+                //control tab color
+                    $("#myProfileTab").click(function(){
+                        $(this).removeClass("inactive");
+                        $("#myLikesTab").addClass("inactive");
+                        $("#myGroupsTab").addClass("inactive");
+                    });
+                    $("#myGroupsTab").click(function(){
+                        $(this).removeClass("inactive");
+                        $("#myLikesTab").addClass("inactive");
+                        $("#myProfileTab").addClass("inactive");
+                    });
+                    $("#myLikesTab").click(function(){
+                        $(this).removeClass("inactive");
+                        $("#myGroupsTab").addClass("inactive");
+                        $("#myProfileTab").addClass("inactive");
+                    });
+                });
+        </script>
+
     </head>
 
     <header id = "header"><?php include "header.php"; ?></header>
@@ -37,11 +62,11 @@
                         <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
                     </p>
                     <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
-                    <table style= "display: block;">
-                        <tr class="myProfileTab">My Profile</tr>
-                        <tr class="myGroupsTab">My Groups</tr>
-                        <tr class="myLikesTab">My Likes</tr>
-                    </table>
+                    <div id="tabs">
+                        <div id="myProfileTab">My Profile</div>
+                        <div id="myGroupsTab" class="inactive">My Groups</div>
+                        <div id="myLikesTab" class="inactive">My Likes</div>
+                    </div>
                 </div>
 
                 <div class="profileViewer" style="height: 100%; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
