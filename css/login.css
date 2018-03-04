@@ -128,6 +128,7 @@ br{
 .field {
     display: block;
     padding: 12px;
+    margin-right: 24px;
 }
 
 .input2 {
