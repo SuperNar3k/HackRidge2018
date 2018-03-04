@@ -81,10 +81,10 @@ div.headerSignIn button {
 		border-radius: 15px;
 		border-width: 0;
 		background-color: #aaa;
-    color: #fff;
+        color: #fff;
 		width: 75%;
         height: 35px;
-        min-width: 200px;
+        min-width: 250px;
 		padding: 0;
 }
 
