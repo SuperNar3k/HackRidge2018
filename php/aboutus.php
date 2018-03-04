@@ -25,11 +25,8 @@ session_start();
         <div id = "footerPusher" style="background-image: url(https://www.fusionduniya.com/wp-content/uploads/2017/05/about-us.jpg); background-repeat: no-repeat; background-size: 1903px 952px;">
 
             <p id = "au"> Our website is designed to bring you new and flavorful dishes. Using your likes and previous dishes, it can find you new recipes to create for you, family, and friends. 
-               <br />
             Using the database from Food 2 Fork, we are able to introduce unique recipes from all around the world.
-            <br /> 
                  We can guarantee you will find amazing flavors for your taste buds.
-                 <br />
              </p>
 
         </div>
