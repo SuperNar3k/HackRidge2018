@@ -39,7 +39,7 @@ div.headerSignIn button {
     float: left;
     color: black;
     text-align: center;
-    padding: 14px 0px;
+    padding: 10px 0px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -66,8 +66,17 @@ div.headerSignIn button {
 #loginButtonNav, #logoutButtonNav{
         right: 15px;
         float: right;
-		position: relative;
+        position: relative;
+        padding:14px;
+        transition: 500ms;
 		font-family: Bookman, sans-serif;
+}
+
+#loginButtonNav:hover, #logoutButtonNav:hover{
+    color:rgb(255, 203, 106);
+	transform: translateY(-2px);
+    transition: 500ms;
+    font-size: 21px;
 }
 
 #logo{

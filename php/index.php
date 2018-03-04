@@ -24,6 +24,21 @@ session_start();
     <body>
         <div id = "footerPusher" style="background-image: url(../rsc/kitchen.jpg)">
             <p id="maintext">Not sure what to make? We gotchu covered.</p>
+            <span class="mainicons">
+                <img class="mainicons_image" src="../rsc/recipebook.png"></img>
+                <div class="mainicons_text">
+                    <span>Search new recipes!</span>
+                </div>
+
+                <img class="mainicons_image" src="../rsc/friend.png">
+                <div class="mainicons_text">
+                    <span>See what your friends like!</span>
+                </div>
+                <img class="mainicons_image" src="../rsc/brain.png">
+                <div class="mainicons_text">
+                    <span>API Suggests food you should try!</span>
+                </div>
+            </span>
         </div>
     </body>
 
