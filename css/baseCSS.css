@@ -31,13 +31,13 @@ footer {
    flex-shrink:2;
    flex-basis: 10px;
 }
-#bottomtext{
+.bottomtext{
    transition: 500ms;
    text-decoration: none;
    color: white;
 }
 
-#bottomtext:hover {
+.bottomtext:hover {
 	color:rgb(255, 203, 106);
 	transform: translateY(-2px);
     transition: 500ms;
