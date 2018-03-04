@@ -65,3 +65,10 @@ th, td{
     text-align: left;
 }
 #informationContainer div table th, td{width: 33.33%;}
+
+.specialButtonCoolThing:hover{
+    color:rgb(255, 203, 106);
+	transform: translateY(-2px);
+    transition: 500ms;
+    font-size: 18px;
+}
