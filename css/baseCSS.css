@@ -152,4 +152,11 @@ div.panel p{
     padding-top: 100px;
     font-family: Bookman, sans-serif;
     font-size: 50px;
+    font-family: Bookman, sans-serif;
+}
+
+h1{
+    text-align: left ;
+    font-family: Bookman, sans-serif;
+    font-size: 18px;
 }

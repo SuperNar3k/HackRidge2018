@@ -23,12 +23,12 @@ session_start();
 
     <body>
         <div id = "footerPusher">
-
-            <p id = "tac">
+            <div id ="terms">
+            <h1 id = "tac">
 
 
     Introduction
-
+    <br /><br />
 These Website Standard Terms and Conditions written on this webpage shall manage your use of this website. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
 <br /><br />
     Intellectual Property Rights
@@ -41,14 +41,15 @@ You are granted limited license only for purposes of viewing the material contai
     <br /><br />
 You are specifically restricted from all of the following
 <br /><br />
-    publishing any Website material in any other media;<br />
-    selling, sublicensing and/or otherwise commercializing any Website material;<br />
-    publicly performing and/or showing any Website material;<br />
-    using this Website in any way that is or may be damaging to this Website;<br />
-    using this Website in any way that impacts user access to this Website;<br />
-    using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;<br />
-    engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;<br />
-    using this Website to engage in any advertising or marketing.<br />
+<ol>
+    <li>Publishing any Website material in any other medi</li>
+    <li>Selling, sublicensing and/or otherwise commercializing any Website material</li>
+    <li>Publicly performing and/or showing any Website material</li>
+    <li>Using this Website in any way that is or may be damaging to this Website</li>
+    <li>Using this Website in any way that impacts user access to this Website</li>
+    <li>Using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity</li>
+    <li>Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website</li>
+    <li>Using this Website to engage in any advertising or marketing</li>
     <br />
 Certain areas of this Website are restricted from being access by you and Foodle may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.
 <br /><br />
@@ -89,7 +90,8 @@ These Terms constitute the entire agreement between Foodle and you in relation t
     Governing Law & Jurisdiction
     <br /><br />
 These Terms will be governed by and interpreted in accordance with the laws of the State of Illinois, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Illinois for the resolution of any disputes.
-</p>
+        </h1>
+        </div>
 
         </div>
     </body>
