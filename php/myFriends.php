@@ -11,7 +11,7 @@
 
 
     if($_SESSION['userID']==(int)$_GET['userID']):
-    echo '<form method="POST" action="friendsAdder.php"><table>';
+    echo '<form method="POST" action="friendsAdder.php"><table><tr><td style="color: rgba(4,133,255,.8);font-size:32px;">Pending Friend Requests</td></tr>';
 
     for($i = 0; $i <$pendingRequests; $i++){
 
@@ -25,13 +25,18 @@
         echo '<tr>
                 <input name = "userPID[', $i,']" value = "',(int)$_GET['userID'],'" class = "classicColor" type = "hidden">
                 <input name = "userID[', $i,']" value = "',$data[$i],'" class = "classicColor" type = "hidden"><td>',$firstName,' ',$lastName,'</td>';
-        echo '<td><input name = "deny[', $i,']" value = "Deny" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgb(255,153,0);"></td>';
-        echo '<td><input name = "accept[', $i,']" value = "Accept" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgba(4,133,255,.8);"></td>';
+                echo '<td><input name = "accept[', $i,']" value = "Accept" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgba(4,133,255,.8);"></td>';
+                echo '<td><input name = "deny[', $i,']" value = "Deny" class = "classicColor" type = "submit" style = "margin-right: 0px; background-color: rgb(255,153,0);"></td>';
         echo '</tr>';
 
     }
 
     echo '</table></form>';
+    endif;
+
+
+    if($_SESSION['userID']==(int)$_GET['userID']):
+        echo '<br><div style="background-color: rgba(4,133,255,.8); width: 170px;border-radius: 15px;text-align:center;"><a style="text-decoration:none;font-size:26px;color:white;" href="userSearch.php">Find Friends</a></div>';
     endif;
 
     $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";
