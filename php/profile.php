@@ -37,11 +37,25 @@
                         <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
                     </p>
                     <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
-                    <p>...</p>
+                    <table>
+                        <tr class="myProfileTab">My Profile</tr>
+                        <tr class="myGroupsTab">My Groups</tr>
+                        <tr class="myLikesTab">My Likes</tr>
+                    </table>
                 </div>
 
-                <div style="height: 100%; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
-                    d
+                <div class="profileViewer" style="height: 100%; width: 70%; padding: 0px; margin: 0px;margin-top:20px;margin-right:20px; margin-left:20px;">
+                    <script>
+                        $(document).ready(function(){
+                            $("#profileViewer").load("myProfile.php");
+                            $("#myProfileTab").click(function(){
+                                $("#profileViewer").load("myGroups.php");
+                            });
+                            $("#myGroupsTab").click(function(){
+                                $("#profileViewer").load("myLikes.php");
+                            });
+                        });
+                    </script>
                 </div>
             </div>
             
