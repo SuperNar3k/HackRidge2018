@@ -22,10 +22,8 @@ session_start();
     <header id = "header"><?php include "header.php"; ?></header>
 
     <body>
-        <div id = "footerPusher">
-
-            <!--Home Page Main Image Card-->
-
+        <div id = "footerPusher" style="background-image: url(../rsc/kitchen.jpg)">
+            <p id="maintext">Not sure what to make? We gotchu covered.</p>
         </div>
     </body>
 
