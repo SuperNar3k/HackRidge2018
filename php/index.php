@@ -8,6 +8,7 @@ session_start();
         <title>Foodle - Home</title>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/baseCSS.css">
+        <link rel="stylesheet" href="../css/index.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../js/headerJQuery.js"></script>
