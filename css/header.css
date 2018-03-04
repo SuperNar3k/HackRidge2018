@@ -60,22 +60,26 @@ div.headerSignIn button {
 }
 
 #searchBarForm{
-        width: 20%;
+    margin-left: calc(10% - 125px);
+    margin-right: calc(10% - 125px);
         padding-left: 2.5%;
         padding-right: 2.5%;
 
 }
 
 #suggestionsLink{
-		width: 20%;
+        margin-left: calc(10% - 115px);
+        margin-right: calc(10% - 115px);
 }
 
 #myProfileLink{
-		width: 20%;
+    margin-left: calc(10% - 45px);
+    margin-right: calc(10% - 45px);
 }
 
 #loginButtonNav, #logoutButtonNav{
-        width: 20%;
+    margin-left: calc(10% - 45px);
+    margin-right: calc(10% - 45px);
         position: relative;
         transition: 500ms;
 		font-family: Bookman, sans-serif;

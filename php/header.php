@@ -15,13 +15,13 @@
 				<a class = "classicColor" id = "logoutButtonNav" href = "logout.php">Log Out</a>
 		<?php else: ?>
 			<a id = "homeLink" href = "index.php" style="margin-right:calc(37% - 60px);"><img id = "logo" src = "../rsc/text_logo.png"></a>
-			<form id = "searchBarForm" method = "get" action = "search.php" style="width:25%;">	
+			<form id = "searchBarForm" method = "get" action = "search.php" style="margin-left: calc(12.5% - 125px);margin-right: calc(12.5% - 125px);">	
 				<div id = "searchBarWrapper">
 					<input type = "text" id = "searchBar" name = "query" placeholder = "Search for recipes by name" autocomplete = "off">
 					<input type = "submit" id = "searchSubmit" name = "submit"> 
 				</div>	
 			</form>
-			<a class = "classicColor" id = "loginButtonNav" href = "login.php" style="width:25%; float:right;">Log In</a>
+			<a class = "classicColor" id = "loginButtonNav" href = "login.php" style="margin-left: calc(12.5% - 45px);margin-right: calc(12.5% - 45px);float:right;">Log In</a>
 		<?php endif; ?>
     </nav>
 </div>
