@@ -3,16 +3,15 @@
     session_start();
     include "database.php";
     $invalid = false;
-    if(isset($_GET['login'])){$invalid = true;}
+    if(isset($_GET['email'])){$invalid = true;}
 
 ?>
 <html>
     <head>
 
-        <title>Foodle - Login</title>
+        <title>Foodle - Forgot My Password</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="headerJQuery.js"></script>
         <link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/baseCSS.css">
@@ -25,28 +24,19 @@
     <body>
 		<div id = "footerPusher">
 
-            <form id="login" class="form" action="session.php" method="post">
+            <form id="login" class="form" action="sendRecoveryEmail.php" method="post">
                 <div>
                     <h id="logTitle">Log in</h>
                     <hr class="loghr">
                     <br/>
                     <?php 
                         if($invalid){
-                            echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
+                            echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">A user with that email does not exist</p>';
                         }
                     ?>
                     <input class="input2" placeholder = "Email*" type = "email" name = "email" autofocus required>
                     <br/><br/>
-                    <input class="input2" placeholder = "Password*" type = "password" name = "password" required>
-                    <br/>
-                    <br/>
-                    <div>
-                        <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
-                    </div>
-                        <div>
-                            <a href="forgotPassword.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
-                        </div>
-                    <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
+                    <button id = "loginButton" type = "submit" name = 'submit' value="forgotPassword" style = "min-height: 75px;">Send Recovery Email</button>
                 </div>              
             </form>
             
