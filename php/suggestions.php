@@ -33,6 +33,9 @@
   <body style = "background-image: url(../rsc/indexBackground.jpg)">
 		<div id = "footerPusher">
 			<?php 
+
+				echo '<h1 style = "text-align: center;">Suggestions tailored to you:</h1>';
+
 				include 'getSuggestions.php';
 				
 				foreach($suggestions as $key => $value){

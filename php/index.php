@@ -25,8 +25,8 @@ session_start();
 
     <header id = "header"><?php include "header.php"; ?></header>
 
-    <body>
-        <div id = "footerPusher" style="background-image: url(../rsc/indexBackground.jpg)">
+    <body style = "background-image: url(../rsc/indexBackground.jpg)">
+        <div id = "footerPusher">
             <p id="maintext">Not sure what to eat? We've got you covered.</p>
             <span class="mainicons">
                 <div class="mainicons_wrapper">

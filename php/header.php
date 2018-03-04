@@ -4,7 +4,7 @@
     <nav id = "navBar" class = "topnav">
 		<?php if(isset($_SESSION["userID"])) : ?><!--Checking if student is logged in for different nav bar-->
 			<a id = "homeLink" href = "index.php"><img id = "logo" src = "../rsc/text_logo.png"></a>
-				<a class = "baseText" id = "suggestionsLink" href = "suggestions.php">What Should I Eat Today?</a>
+				<a class = "baseText" id = "suggestionsLink" href = "suggestions.php">Smart Suggestions</a>
 				<form id = "searchBarForm" method = "get" action = "search.php">	
 					<div id = "searchBarWrapper">
 						<input type = "text" id = "searchBar" name = "query" placeholder = "Search for recipes by name" autocomplete = "off">
