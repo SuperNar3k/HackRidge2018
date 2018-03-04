@@ -38,7 +38,7 @@ session_start();
                 <div class="mainicons_text">
                     <span>API Suggests food you should try!</span>
                 </div>
-            </span>
+        </span>
         </div>
     </body>
 

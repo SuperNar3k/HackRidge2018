@@ -167,18 +167,19 @@ div.panel p{
 
 .mainicons{
     padding-right: 6rem;
+    display: flex;
 }
 
 .mainicons_image{
     width: 100%;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.7);
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 25rem;
+    max-height: 15rem;
 }
 
 .mainicons_text{
     width:100%;
-    max-width:25rem;
-    text-align: justify;
+    max-width:10rem;
+    text-align: left;
     font-size: 1.5rem;
 }
