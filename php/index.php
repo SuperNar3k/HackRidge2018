@@ -47,7 +47,7 @@ session_start();
                 </div>
             </span>
 
-            <div id="ourPurpose">
+            <div id="wrapperDiv">
                 <p id = "ourPurposeText">We are here to help!</p>
             </div>
         </div>

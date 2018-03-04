@@ -15,7 +15,7 @@ function isElementInViewport(elem) {
 }
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(!$("#ourPurposeText").hasClass("animated") && $(window).scrollTop() + $(window).height() >= $("#ourPurposeText").scrollTop()){
+        if(!$("#ourPurposeText").hasClass("animated") /*&& isElementInViewport("#wrapperDiv")*/){
             $("#ourPurposeText").addClass("animated");
             $("#ourPurposeText").fadeIn();
         }
