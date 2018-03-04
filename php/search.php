@@ -69,7 +69,9 @@
 					echo '</ul>';
 					echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank" style = "top:0; margin: 5px;">Read More</a>';
 					echo '</div>';
-					echo '<hr>';
+					if($i<$max-1){
+						echo '<hr>';
+					}
 				}
 				echo '</div>';
 				
@@ -77,8 +79,8 @@
 					//load more button
 					echo '<div style = "margin: 10px auto; text-align: center;">
 					<form method = "get">
-					<input type = "hidden" name = "query" value = "', $_GET['query'],'">;
-					<input type = "submit" name = "loadAll" value = "Load More">
+					<input type = "hidden" name = "query" value = "', $_GET['query'],'">
+					<input type = "submit" name = "loadAll" value = "Load More" class = "classicColor">
 					</form>
 					</div>';
 				}
