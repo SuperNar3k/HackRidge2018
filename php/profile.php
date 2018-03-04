@@ -37,7 +37,7 @@
                         <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
                     </p>
                     <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
-                    <table>
+                    <table style= "display: block;">
                         <tr class="myProfileTab">My Profile</tr>
                         <tr class="myGroupsTab">My Groups</tr>
                         <tr class="myLikesTab">My Likes</tr>
@@ -49,9 +49,12 @@
                         $(document).ready(function(){
                             $("#profileViewer").load("myProfile.php");
                             $("#myProfileTab").click(function(){
-                                $("#profileViewer").load("myGroups.php");
+                                $("#profileViewer").load("myProfile.php");
                             });
                             $("#myGroupsTab").click(function(){
+                                $("#profileViewer").load("myGroups.php");
+                            });
+                            $("#myLikesTab").click(function(){
                                 $("#profileViewer").load("myLikes.php");
                             });
                         });

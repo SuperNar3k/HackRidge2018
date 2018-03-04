@@ -3,36 +3,35 @@ session_start();
 //----------
 //username needs to come from session
 //----------
-    if(!empty($_POST["firstNameSignUp"]))
-    if(isset($_POST["firstNameSignUp"])) {
+    if(!empty($_POST["firstNameSignUp"])) {
         $firstname = $_POST["firstNameSignUp"];
        
     } 
-    else{setcookie("ERROR","First Name is blank.", time() + (86400 * 30), "/");header("location: error.php");}
-    if(isset($_POST["lastNameSignUp"])) {
+    else{header("location: signup.php");}
+    if(!empty($_POST["lastNameSignUp"])) {
         
         $lastname = $_POST["lastNameSignUp"];
          
     }
-    else{setcookie("ERROR","Last Name is blank.", time() + (86400 * 30), "/");header("location: error.php");}
-    if(isset($_POST["emailSignUp"])) {
+    else{header("location: signup.php");}
+    if(!empty($_POST["emailSignUp"])) {
 
         $useremail = $_POST["emailSignUp"];
  
     }
-    else{setcookie("ERROR","Email is blank.", time() + (86400 * 30), "/");header("location: error.php");}
-    if(isset($_POST["passwordSignUp"])) {
+    else{header("location: signup.php");}
+    if(!empty($_POST["passwordSignUp"])) {
         
         $userpassword = $_POST["passwordSignUp"];
          
     }
-    else{setcookie("ERROR","Password is blank.", time() + (86400 * 30), "/");header("location: error.php");}
-    if(isset($_POST["passwordConfirmSignUp"])) {
+    else{header("location: signup.php");}
+    if(!empty($_POST["passwordConfirmSignUp"])) {
         
         $userpasswordConfirm = $_POST["passwordConfirmSignUp"];
          
     }
-    else{setcookie("ERROR","Password confirm is blank.", time() + (86400 * 30), "/");header("location: error.php");}
+    else{header("location: signup.php");}
             
    
     
