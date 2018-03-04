@@ -1,5 +1,5 @@
 <!Doctype HTML>
-<?php 
+<?php
     session_start();
     include "database.php";
 
@@ -32,25 +32,26 @@
     <body>
 		<div id = "footerPusher">
 
-            <form id="login" class="form" action="session.php" method="post" style="height:350px;">
+            <form id="login" class="form" action="session.php" method="post">
                 <div>
-                    <p style = "font-size: 30px; font-weight: bold;">Log in</p>
+                    <h id="logTitle">Log in</h>
                     <br/>
                     <?php 
                         if($loginError){
-                            echo '<p style = "color: red; font-weight: bold;">Incorrect email or password</p>';
+                            echo '<p style = "color: red; text-align: center; font-size: 16px; font-weight: bold;">Incorrect email or password</p>';
                         }
                     ?>
-                    <p>Email</p>
-                    <input placeholder = "Enter Email" type = "email" name = "email" autofocus required>
+                    <input placeholder = "Email*" type = "email" name = "email" autofocus required>
                     <br/><br/>
-                    <p>Password</p>
-                    <input placeholder = "Enter Password" type = "password" name = "password" required>
+                    <input placeholder = "Password*" type = "password" name = "password" required>
                     <br/>
                     <br/>
-                    <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
-                    <a href="signup.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
-
+                    <div>
+                        <a href="signup.php" id="newAccount" style="padding:10px; float:right;">Don't have an account?</a>
+                    </div>
+                        <div>
+                            <a href="signup.php" id="newAccount" style="padding:10px; float:left;">Forgot your password?</a>
+                        </div>
                     <button id = "loginButton" type = "submit" value="Log In">Sign In</button>
                 </div>              
             </form>
@@ -61,16 +62,3 @@
     <footer id = "footer"><?php include "footer.php"; ?></footer>
 
 </html> 
-
-<body>
-<div id="container">
-<header id = "header"><?php include "header.php"; ?></header>
-        <div class="body">
-            
-                
-            </form>
-        </div>
-
-</div>
-</body>
-</html>
