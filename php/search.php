@@ -62,7 +62,7 @@
 						echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
 						echo '<form method = "post">
 						<input type = "hidden" name = "recipeID" value = "', $key,'">
-						<input type = "submit" name = "submit" value = "Like" class = "classicColor">';
+						<input type = "submit" name = "submit" value = "Like" class = "classicColor likeButton">';
 						echo '</div>';
 						echo '<hr>';
 					}
