@@ -8,7 +8,7 @@
   $stmt = $pdo->prepare($sql);
   $stmt-> execute(['userID' => $_SESSION['userID']]);
   $recipeLikes = array();
-  $recipeLikes = $stmt->fetchAll(PDO::FetchColumn, 1);
+  $recipeLikes = $stmt->fetchAll(PDO::FETCH_COLUMN, 1);
   
   for($i = 0; $i<count($recipeLikes); $i++){
     echo '<div class="card recipe">';
