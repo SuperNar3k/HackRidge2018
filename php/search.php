@@ -60,7 +60,7 @@
 					<input type = "submit" name = "submit" value = "Like This Recipe" class = "classicColor likeButton" style = "margin-bottom: 10px; display: inline;"></form>';
 					echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
 					echo '<br>';
-					echo '<div style = "margin: 0 auto; text-align: center;">';
+					echo '<div style = "width: 500px; margin: 0 auto; text-align: left;">';
 					echo '<p>Ingredients:</p>';
 					echo '<ul style = "padding: 0;">';
 					for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){

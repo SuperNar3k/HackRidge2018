@@ -28,11 +28,11 @@
     echo '<h3 style = "cursor: pointer;" onclick = "toggle(', $i,')">', $recipeData['recipe']['title'], '</h3>';
     echo '<div id="slideToggledWrapper', $i,'" class = "slideUpInit">';
     echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
-    echo '<br><ul>';
+    echo '<br><div style = "width: 500px; text-align: left; margin: 0 auto;"><ul>';
     for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
       echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
     }
-    echo '</ul>';
+    echo '</ul></div>';
     echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
     echo '</div></div>';
   }
