@@ -42,7 +42,7 @@ session_start();
                 <div class="mainicons_wrapper">
                   <img class="mainicons_image" src="../rsc/brain.png">
                   <div class="mainicons_text">
-                      <p id = "suggestionsCaption" class = "mainicons_caption">View AI meal suggestions</p>
+                      <p id = "suggestionsCaption" class = "mainicons_caption">View smart meal suggestions</p>
                   </div>
                 </div>
             </span>

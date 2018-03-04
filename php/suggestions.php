@@ -30,7 +30,7 @@
 
   <header id = "header"><?php include "header.php"; ?></header>
 
-  <body>
+  <body style = "background-image: url(../rsc/indexBackground.jpg)">
 		<div id = "footerPusher">
 			<?php 
 				include 'getSuggestions.php';
@@ -40,19 +40,21 @@
 					$recipeJSON = file_get_contents(API_GET_URL."&rId=".$key);
 					$recipeData = json_decode($recipeJSON, true);
 					
-					echo '<h3>', $recipeData['recipe']['title'], '</h3>';
+					echo '<h3 style = "display: inline; margin-bottom: 10px; margin-right: 5px;">', $recipeData['recipe']['title'], '</h3>';
+					echo '<form method = "post" style = "display:inline;">
+					<input type = "hidden" name = "recipeID" value = "', $key,'">
+					<input type = "submit" name = "submit" value = "Like This Recipe" class = "classicColor likeButton" style = "margin-bottom: 10px; display: inline;"></form>';
 					echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
-					echo '<br><ul>';
+					echo '<br>';
+					echo '<div style = "margin: 0 auto; text-align: center;">';
+					echo '<p>Ingredients:</p>';
+					echo '<ul style = "padding: 0;">';
 					for($j = 0; $j<count($recipeData['recipe']['ingredients']); $j++){
 						echo '<li>', $recipeData['recipe']['ingredients'][$j],'</li>';
 					}
 					echo '</ul>';
-					echo '<div style = "display:flex;"';
-					echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank">Read More</a>';
-					echo '<form method = "post">
-					<input type = "hidden" name = "recipeID" value = "', $key,'">
-					<input type = "submit" name = "submit" value = "Like" class = "classicColor likeButton">';
-					echo '</div>';
+					echo '<a href = "', $recipeData['recipe']['source_url'],'" target = "_blank" style = "top:0; margin: 5px;">Read More</a>';
+					echo '</div></div>';
 				}
 				unset($key);
 				unset($value);
