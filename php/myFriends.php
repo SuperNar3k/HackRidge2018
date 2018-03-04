@@ -37,8 +37,8 @@
 
     if($_SESSION['userID']==(int)$_GET['userID']):
         echo '<br><a style="text-decoration:none;font-size:26px;color:white;">Add Friends: </a><br>
-        <form method="POST" class="specialButtonCoolThing" action="userSearch.php"><a><input type="hidden" name="userRequesting" value="',$_SESSION['userID'],'"><input type = "email" class="specialButtonCoolThing" class="input2" style="height: 24px;" placeholder = "Eg: Johnny27@gmail.com" name = "userSearch" required></a><a><button class="specialButtonCoolThing" style="border-radius: 0px; height:30px;background-color: rgba(255,153,0,.8);cursor: pointer;" type = "submit">Send Friend Request</button>
-        </a></form>';
+        <div class="specialButtonCoolThing"><form method="POST" action="userSearch.php"><a><input type="hidden" name="userRequesting" value="',$_SESSION['userID'],'"><input type = "email" class="input2" style="height: 24px;" placeholder = "Eg: Johnny27@gmail.com" name = "userSearch" required></a><a><button style="border-radius: 0px; height:30px;background-color: rgba(255,153,0,.8);cursor: pointer;" type = "submit">Send Friend Request</button>
+        </a></form></div>';
     endif;
     $sql = "SELECT * FROM usertouserfriends WHERE userID0=:UserID OR userID1=:UserID";
     $stmt = $pdo->prepare($sql);
