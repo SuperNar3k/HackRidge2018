@@ -1,5 +1,11 @@
-<h4 class = "baseText" style = "font-size: 24px">Temp footer title</h4>
-    <p class = "footerText">Temp credits</p>
-    
-    <!--Notice that this page is UNOFFICIAL-->
-    <p style = "color: white;">***Temp footer bottom text***</p>
+<link rel="stylesheet" href="../css/baseCSS.css">
+<div id="footer">
+	<a id="bottomtext">About us</a>
+	<a id="bottomtext">News</a>
+	<a id="bottomtext">Feedback</a>
+	<a id="bottomtext">FAQ</a>
+	<a id="bottomtext">Privacy Policy</a>
+	<a id="bottomtext">Terms of Use</a>
+	<a id="bottomtext">Help</a>
+	<a id="bottomtext">Contact Us</a>
+</div>
