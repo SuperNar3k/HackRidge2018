@@ -62,19 +62,33 @@ div.headerSignIn button {
 #searchBarForm{
     margin-left: calc(10% - 125px);
     margin-right: calc(10% - 125px);
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 
 }
 
 #suggestionsLink{
-        margin-left: calc(10% - 115px);
-        margin-right: calc(10% - 115px);
+    margin-left: calc(10% - 115px);
+    margin-right: calc(10% - 115px);
+    transition: 500ms;
+}
+#suggestionsLink:hover{
+    color:rgb(255, 203, 106);
+    transform: translateY(-2px);
+    transition: 500ms;
+    font-size: 21px;
 }
 
 #myProfileLink{
     margin-left: calc(10% - 45px);
     margin-right: calc(10% - 45px);
+    transition: 500ms;
+}
+#myProfileLink:hover{
+    color:rgb(255, 203, 106);
+	transform: translateY(-2px);
+    transition: 500ms;
+    font-size: 21px;
 }
 
 #loginButtonNav, #logoutButtonNav{
