@@ -62,6 +62,6 @@
             ';
     endif;
     if($_SESSION['userID']==(int)$_GET['userID']):
-        <button></button>
+       echo' <button href="edit-profile.php">Edit Profile</button>';
     endif;
 ?>
