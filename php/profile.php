@@ -22,6 +22,20 @@
         <link rel="stylesheet" href="../css/profile.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            location.search
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                tmp = item.split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+        </script>
         
         <script>
             var myProfileTabActive = true;
@@ -65,7 +79,7 @@
                               $stmt = $pdo->prepare($sql);
                               $stmt->execute(['userID' => $_SESSION['userID']]);
                               $userIconPath = $stmt->fetchAll();
-                              echo '<img id = "userProfileImage" src = "../rsc/userIcons/', $userIconPath[0],'">';
+                              echo '<img id = "userProfileImage" src = "../rsc/userIcons/', $userIconPath[0][0],'">';
                             ?>
                         </p>
                         <p>Hello, <?php echo $firstName,' ',$lastName;?></p>
@@ -79,15 +93,15 @@
                     <div id="profileViewer" style="height: 100%; width: 80%; padding: 0px; margin: 0px;margin-top:40px;margin-right:20px; padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <script>
                             $(document).ready(function(){
-                                $("#profileViewer").load("myProfile.php");
+                                $("#profileViewer").load("myProfile.php?userID="+findGetParameter('userID'));
                                 $("#myProfileTab").click(function(){
-                                    $("#profileViewer").load("myProfile.php");
+                                    $("#profileViewer").load("myProfile.php?userID="+findGetParameter('userID'));
                                 });
                                 $("#myFriendsTab").click(function(){
-                                    $("#profileViewer").load("myFriends.php");
+                                    $("#profileViewer").load("myFriends.php?userID="+findGetParameter('userID'));
                                 });
                                 $("#myLikesTab").click(function(){
-                                    $("#profileViewer").load("myLikes.php");
+                                    $("#profileViewer").load("myLikes.php?userID="+findGetParameter('userID'));
                                 });
                             });
                         </script>
@@ -95,9 +109,16 @@
                 </div>
             <?php else:?>
                 <div style ="display: flex;min-height:100%">
-                    <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(0,0,0,.1);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
+                    <div style="height: 100%; width: 20%; padding: 0px; margin: 0px;border-right: .1rem solid rgba(255,153,0,.3);margin-top:40px;padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <p>
-                            <img id = "userProfileImage" src = "../rsc/defaultUserIcon.png">
+                            <!--Get User Icon-->
+                            <?php
+                                $sql = "SELECT imageFilePath FROM users WHERE userID = :userID";
+                                $stmt = $pdo->prepare($sql);
+                                $stmt->execute(['userID' => $_SESSION['userID']]);
+                                $userIconPath = $stmt->fetchAll();
+                                echo '<img id = "userProfileImage" src = "../rsc/userIcons/', $userIconPath[0][0],'">';
+                            ?>
                         </p>
                         <p><?php echo $firstName,' ',$lastName;?></p>
                         <div id="tabs">
@@ -107,24 +128,24 @@
                         </div>
                     </div>
 
-                    <div id="profileViewer" style="height: 100%; width: 80%; padding: 0px; margin: 0px;margin-top:40px;margin-right:20px; padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
+                    <div id="profileViewer" style="height: 100%; width: 80%; padding: 0px; padding-left:20px; margin: 0px;margin-top:40px;margin-right:20px; padding-bottom: 40px;padding-top: 10px;margin-left:20px;">
                         <script>
                             $(document).ready(function(){
-                                $("#profileViewer").load("myProfile.php");
+                                $("#profileViewer").load("myProfile.php?userID="+findGetParameter('userID'));
                                 $("#myProfileTab").click(function(){
-                                    $("#profileViewer").load("myProfile.php");
+                                    $("#profileViewer").load("myProfile.php?userID="+findGetParameter('userID'));
                                 });
                                 $("#myFriendsTab").click(function(){
-                                    $("#profileViewer").load("myFriends.php");
+                                    $("#profileViewer").load("myFriends.php?userID="+findGetParameter('userID'));
                                 });
                                 $("#myLikesTab").click(function(){
-                                    $("#profileViewer").load("myLikes.php");
+                                    $("#profileViewer").load("myLikes.php?userID="+findGetParameter('userID'));
                                 });
                             });
                         </script>
                     </div>
                 </div>
-            <?php endif:?>
+            <?php endif;?>
         </div>
     </body>
         
