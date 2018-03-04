@@ -5,3 +5,7 @@ div.recipe{
 	border: 0;
 	padding: 20px;
 }
+
+img.foodImg{
+	float: left;
+}
