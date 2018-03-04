@@ -23,7 +23,7 @@ session_start();
 
     <body>
         <div id = "footerPusher" style="background-image: url(../rsc/kitchen.jpg)">
-            <p id="maintext">Not sure what to make? We gotchu covered.</p>
+            <p id="maintext">Not sure what to make? We have you covered.</p>
             <span class="mainicons">
                 <img class="mainicons_image" src="../rsc/recipebook.png"></img>
                 <div class="mainicons_text">

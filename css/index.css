@@ -1,0 +1,27 @@
+#maintext{
+    padding:0px;
+    margin:0px;
+    padding-top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px #333;
+    color:white;
+}
+
+.mainicons{
+    padding-right: 6rem;
+}
+
+.mainicons_image{
+    width: 100%;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.7);
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.mainicons_text{
+    width:100%;
+    max-width:25rem;
+    text-align: justify;
+    font-size: 1.5rem;
+}
