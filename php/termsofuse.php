@@ -15,11 +15,11 @@ session_start();
                 font-size: 18px;
                 margin-left: 100px;
                 margin-right: 100px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+                padding-top: 0;
             }
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="../js/headerJQuery.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
                 $("#homeLink").addClass("active");
@@ -32,8 +32,8 @@ session_start();
 
     <body>
         <div id = "footerPusher">
-            <div id ="terms">
-            <h1 id = "tac">
+            <div id ="terms" style = "padding: 0;">
+            <h1 id = "tac" style = "border-radius:15px; padding: 10px;">
 
     <br /><br />
 These Website Standard Terms and Conditions written on this webpage shall manage your use of this website. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
