@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<?php include 'database.php';?>
+<?php include 'database.php';
+	session_start();
+?>
 <html>
 	<head>
 		<title>Foodle - Search</title>
 		<link rel="shortcut icon" href="../rsc//favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../css/baseCSS.css">
+		<link rel="stylesheet" href="../css/search.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
@@ -47,7 +50,20 @@
 					echo '</div>';
 					*/
 					//Test page:
-					echo '<div class = "card" style = "width: 80%; margin: 10px;">
+					echo '<div class = "card recipe">
+					<h2>Top 1 Result</h2>
+					<h3>PB And J</h3>
+					<img alt = "Image: PB and J" style = "float: left;">
+					<br><ul>
+					<li>Peanut Butter</li>
+					<li>Bread</li>
+					<li>Jelly</li>
+					</ul>
+					<a>Read More</a>
+					<hr>
+					</div>';
+			
+					echo '<div class = "card recipe">
 					<h2>Top 1 Result</h2>
 					<h3>PB And J</h3>
 					<img alt = "Image: PB and J" style = "float: left;">
