@@ -55,9 +55,11 @@
 					$recipeData = json_decode($recipeJSON, true);
 					
 					echo '<h3 style = "display: inline; margin-bottom: 10px; margin-right: 5px;">', $recipeData['recipe']['title'], '</h3>';
-					echo '<form method = "post" style = "display:inline;">
-					<input type = "hidden" name = "recipeID" value = "', $key,'">
-					<input type = "submit" name = "submit" value = "Like This Recipe" class = "classicColor likeButton" style = "margin-bottom: 10px; display: inline;"></form>';
+					if(isset($_SESSION['studentID'])){
+						echo '<form method = "post" style = "display:inline;">
+						<input type = "hidden" name = "recipeID" value = "', $key,'">
+						<input type = "submit" name = "submit" value = "Like This Recipe" class = "classicColor likeButton" style = "margin-bottom: 10px; display: inline;"></form>';
+					}
 					echo '<img src = "', $recipeData['recipe']['image_url'],'" alt = "Image: ', $recipeData['recipe']['title'],'" class  = "foodImg">';
 					echo '<br>';
 					echo '<div style = "width: 500px; margin: 0 auto; text-align: left;">';
